@@ -1,6 +1,5 @@
 ---
 layout: archive
-title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -11,49 +10,39 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* **Ph.D., in Computing Science, [Fudan University](http://www.fudan.edu.cn)**
+  * **Year**: 2020
+  * **Doctoral Thesis**: Artifact-centric Business Process Modeling and Verification ([以Artifact为中心的业务流程建模及其验证](http://guoshengkang.github.io/files/DoctoralThesis.pdf)) [Slides](http://guoshengkang.github.io/files/DoctoralThesis_Slides.pdf)
+  * **Supervisor**: [Prof. Liang Zhang](http://homepage.fudan.edu.cn/lzhang/)
+* **M.S., in Computer Science, [Hunan University of Science and Technology](http://www.hnust.edu.cn/)**
+  * **Year**: 2011
+  * **Master Thesis**: Research on Global Optimal Web Service Selection Model and Algorithm ([全局优化Web服务选择模型及算法研究](http://guoshengkang.github.io/files/MasterThesis.pdf))
+  * **Supervisor**: [Prof. Jianxun Liu](https://baike.baidu.com/item/%E5%88%98%E5%BB%BA%E5%8B%8B/12002129?fr=aladdin)
+* **B.A., in Information and Computing Science, [Hunan University of Science and Technology](http://www.hnust.edu.cn/)**
+  * **Year**: 2008
+  * **Senior Thesis**: To Solve the Discrete Format of a Type of Elliptic Differential Equations ([一类椭圆型偏微分方程离散格式的求解](http://guoshengkang.github.io/files/SeniorThesis.pdf))
+  * **Supervisor**: [Min Tang](http://math.hnust.edu.cn/pub/sxxy/szdw/jsjs/105553.htm)
 
-Work experience
+Work Experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2020.2-Now: Lecturer
+  * School of Coputer Science and Engineering at Hunan University of Science and Technology
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* 2016.9-2018.8: BigData Engineer and Data Mining Engineer
+  * 3 Startup Companies
+  * Duties included: User portrait, SMS click prediction, sales forecast, etc.
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* Summer 2016: Data Analyst Intern
+  * [HP Labs](https://www.labs.hpe.com/)
+  * Duties included: Data analysis on image data
+  * Supervisor: [Qian Lin](https://www.linkedin.com/in/qianlinca/)
   
-Talks
+* 2011.7-2012.8: Research Assistant
+  * [Hunan University of Science and Technology](http://www.hnust.edu.cn/)
+  * Duties included: Research on Service Computing
+
+Awards
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* First prize of the award for outstanding Ph.D. students at Fudan University, 2014
+* Second prize of the award for outstanding Ph.D. students at Fudan University, 2013
+* Excellent master's thesis of Hunan province, 2013

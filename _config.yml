@@ -1,5 +1,5 @@
 # Welcome to Jekyll!
-#
+# 
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
@@ -7,17 +7,16 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Guosheng KANG (康国胜)"
 title_separator          : "-"
 name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description "Phd Student at Fudan University"
+url                      : https://guoshengkang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "guoshengkang/guoshengkang.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
@@ -80,15 +79,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : #"<center>Guosheng Kang<br/>(康国胜)</center>"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Lecturer @ <a style='color: black;' href='http://www.hnust.edu.cn/'>HNUST</a>"
+  location         : "Xiangtan, CN"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    : "https://scholar.google.com.hk/citations?user=dGw4VPoAAAAJ&hl=en"
+  email            : "guoshengkang@gmail.com"
+  researchgate     : "https://www.researchgate.net/profile/Guosheng_Kang2"
+  dblp             : "https://dblp.org/pers/hd/k/Kang:Guosheng"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,22 +95,22 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "guoshengkang"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0003-1275-5921"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : 
   vine             :
-  weibo            :
+  weibo            : "u/1657497750"
   xing             :
   youtube          :
   wikipedia        :
@@ -172,10 +171,13 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
-# Collections
+# 下一级链接设置
+# Collections 
 collections:
   teaching:
+    output: true
+    permalink: /:collection/:path/
+  resource:
     output: true
     permalink: /:collection/:path/
   publications:
@@ -185,6 +187,9 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
+    output: true
+    permalink: /:collection/:path/
+  Misc:
     output: true
     permalink: /:collection/:path/
 
@@ -216,7 +221,16 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
+      comments: true
+  # _resource
+  - scope:
+      path: ""
+      type: resource
+    values:
+      layout: single
+      author_profile: true
+      share: false
       comments: true
   # _publications
   - scope:
@@ -244,6 +258,15 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _Misc
+  - scope:
+      path: ""
+      type: Misc
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comments: true
 
 # Sass/SCSS
 sass:
@@ -261,14 +284,14 @@ timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database
 # Plugins
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
+  # - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
-  - jekyll-sitemap
+  # - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
