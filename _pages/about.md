@@ -22,7 +22,7 @@ Contact
 * **Email**: guoshengkang@gmail.com
 * **Address**: Room 627, Shaw Building, South Campus, Hunan University of Science and Technology, No.2 Taoyuan Road, Xiangtan, Hunan, China (411201)
 
-<center><a href="http://www.hnust.edu.cn/"  title="HNUST"><img src="http://guoshengkang.github.io/images/HNUST-logo.png" /></a>&ensp;<a href="http://www.fudan.edu.cn"  title="FUDAN"><img src="http://guoshengkang.github.io/images/FUDAN-logo.png" /></a></center>
+<center><a href="http://www.hnust.edu.cn/"  title="HNUST"><img src="http://intelligentservicelab.github.io/images/HNUST-logo.png" /></a>&ensp;<a href="http://www.fudan.edu.cn"  title="FUDAN"><img src="http://intelligentservicelab.github.io/images/FUDAN-logo.png" /></a></center>
 &nbsp;
 <center><a href="https://clustrmaps.com/site/1at7r"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=G3R-0ZMJGUroyPesuxdgM1JhsiWFXX-6XTZTBS1DMoU&cl=ffffff" width="300"/></a></center>
 
@@ -35,4 +35,4 @@ Contact
 > "Coming together is a beginning. Keeping together is progress. Working together is success."  —— Unknown  
 > "The function of leadership is to produce more leaders, not more followers."  —— Unknown  
 > "Few things can help an individual more than to place responsibility on him, and to let him know that you trust him"  —— Unknown  
-[More inspirations ...](http://guoshengkang.github.io/Misc/inspirations)
+[More inspirations ...](http://intelligentservicelab.github.io/Misc/inspirations)

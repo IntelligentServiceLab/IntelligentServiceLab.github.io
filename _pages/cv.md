@@ -12,15 +12,15 @@ Education
 ======
 * **Ph.D., in Computing Science, [Fudan University](http://www.fudan.edu.cn)**
   * **Year**: 2020
-  * **Doctoral Thesis**: Artifact-centric Business Process Modeling and Verification ([以Artifact为中心的业务流程建模及其验证](http://guoshengkang.github.io/files/DoctoralThesis.pdf)) [Slides](http://guoshengkang.github.io/files/DoctoralThesis_Slides.pdf)
+  * **Doctoral Thesis**: Artifact-centric Business Process Modeling and Verification ([以Artifact为中心的业务流程建模及其验证](http://intelligentservicelab.github.io/files/DoctoralThesis.pdf)) [Slides](http://intelligentservicelab.github.io/files/DoctoralThesis_Slides.pdf)
   * **Supervisor**: [Prof. Liang Zhang](http://homepage.fudan.edu.cn/lzhang/)
 * **M.S., in Computer Science, [Hunan University of Science and Technology](http://www.hnust.edu.cn/)**
   * **Year**: 2011
-  * **Master Thesis**: Research on Global Optimal Web Service Selection Model and Algorithm ([全局优化Web服务选择模型及算法研究](http://guoshengkang.github.io/files/MasterThesis.pdf))
+  * **Master Thesis**: Research on Global Optimal Web Service Selection Model and Algorithm ([全局优化Web服务选择模型及算法研究](http://intelligentservicelab.github.io/files/MasterThesis.pdf))
   * **Supervisor**: [Prof. Jianxun Liu](https://baike.baidu.com/item/%E5%88%98%E5%BB%BA%E5%8B%8B/12002129?fr=aladdin)
 * **B.A., in Information and Computing Science, [Hunan University of Science and Technology](http://www.hnust.edu.cn/)**
   * **Year**: 2008
-  * **Senior Thesis**: To Solve the Discrete Format of a Type of Elliptic Differential Equations ([一类椭圆型偏微分方程离散格式的求解](http://guoshengkang.github.io/files/SeniorThesis.pdf))
+  * **Senior Thesis**: To Solve the Discrete Format of a Type of Elliptic Differential Equations ([一类椭圆型偏微分方程离散格式的求解](http://intelligentservicelab.github.io/files/SeniorThesis.pdf))
   * **Supervisor**: [Min Tang](http://math.hnust.edu.cn/pub/sxxy/szdw/jsjs/105553.htm)
 
 Work Experience

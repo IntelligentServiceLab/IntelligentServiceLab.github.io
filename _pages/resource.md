@@ -13,16 +13,16 @@ Outline
 - [Academic evaluation](#Academic evaluation)
 - [Academic writing](#Academic writing)
 - [Useful links](#Useful links)
-- [Software download](http://guoshengkang.github.io/resource/software-collection)
+- [Software download](http://intelligentservicelab.github.io/resource/software-collection)
 
 ------
 
 <span id="Academic evaluation">Academic evaluation</span>
 ======
-* [CAS Rank for International Journals (2018)](http://guoshengkang.github.io/resources/2018_Rank_中国科学院期刊分区表.pdf)
-* [CCF Rank for International Journals and Conferences (2019)](http://guoshengkang.github.io/resources/2019_Rank_CCF推荐国际学术会议和期刊目录.pdf)
-* [CCF Rank for International Journals and Conferences (2015)](http://guoshengkang.github.io/resources/2015_Rank_CCF推荐国际学术会议和期刊目录.pdf)
-* [CCF Rank for Chinese Scientific Journals (2019)](http://guoshengkang.github.io/resources/2019_Rank_CCF推荐中文科技期刊目录.pdf)
+* [CAS Rank for International Journals (2018)](http://intelligentservicelab.github.io/resources/2018_Rank_中国科学院期刊分区表.pdf)
+* [CCF Rank for International Journals and Conferences (2019)](http://intelligentservicelab.github.io/resources/2019_Rank_CCF推荐国际学术会议和期刊目录.pdf)
+* [CCF Rank for International Journals and Conferences (2015)](http://intelligentservicelab.github.io/resources/2015_Rank_CCF推荐国际学术会议和期刊目录.pdf)
+* [CCF Rank for Chinese Scientific Journals (2019)](http://intelligentservicelab.github.io/resources/2019_Rank_CCF推荐中文科技期刊目录.pdf)
 
 <span id="Academic writing">Academic writing</span>
 ======

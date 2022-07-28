@@ -16,6 +16,6 @@ date: 2021-03-10
 * Chapter 9: Software Design Engineering
 
 
-[Homework](https://github.com/guoshengkang/guoshengkang.github.io/blob/master/_teaching/2021-spring-advanced-software-engineering-HW.md)  
+[Homework](https://github.com/intelligentservicelab/intelligentservicelab.github.io/blob/master/_teaching/2021-spring-advanced-software-engineering-HW.md)  
 **Reference Book**: Roger S. Pressman. Software Engineering: A Practitioner's Approach, 6th Edition, McGraw-Hill, 2005. [Slides](https://pan.baidu.com/s/1URrasLAXnU60C2fp4kPsEw)  
-![Textbook](http://guoshengkang.github.io/files/2021-spring-advanced-software-engineering-教材封面.jpg)
+![Textbook](http://intelligentservicelab.github.io/files/2021-spring-advanced-software-engineering-教材封面.jpg)
