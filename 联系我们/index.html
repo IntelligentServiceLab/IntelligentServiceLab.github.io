@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>SCDM Lab</title>
+    <link rel="shortcut icon" href="/img/scdm-logo.png">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <meta name="generator" content="Hexo 5.1.1">
+</head>
+    <style type="text/css">
+        .amap-logo {
+            display: none;
+            opacity: 0 !important;
+        }
+
+        .amap-copyright {
+            opacity: 0;
+        }
+
+        #map_container {
+            border-radius: 8px;
+        }
+
+    
+        
+    </style>
+
+
+
+<body>
+    <header id="page_header">
+        <div class="header_wrap">
+            <div id="blog_name"><a class="blog_title" id="site-name" href="/">IntelligentServiceLab</a>
+            </div><button class="menus_icon">
+                <div class="navicon"></div>
+            </button>
+            <ul class="menus_items">
+                <li class="menus_item"><a class="site-page" href="/%E5%9B%A2%E9%98%9F%E6%88%90%E5%91%98"> 团队成员</a></li>
+                <li class="menus_item"><a class="site-page" href="/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87"> 学术成果</a></li>
+                <li class="menus_item"><a class="site-page" href="/%E7%A7%91%E7%A0%94%E9%A1%B9%E7%9B%AE"> 科研项目</a></li>
+                <li class="menus_item"><a class="site-page" href="/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC"> 联系我们</a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="page_main">
+        <div class="page" itemscope itemtype="http://schema.org/CreativeWork">
+            <h2 class="page-title"></h2>
+            <article>
+                <h2><a>康国胜 </a></h2>
+                <h3 id="IntelligentServiceLab"><a>IntelligentServiceLab</a></h3>
+                <hr>
+                <div id="map_container" style="600px; height: 400px;"></div>
+                <p>欢迎来到湖南科技大学交流访问！</p>
+             
+                    <div class="li">联系邮箱：<a>guoshengkang@gmail.com</a></div>
+                    <div class="li">github：<a>https://guoshengkang.github.io   </a></div>
+                    <div class="li">微博：<a>https://www.weibo.com/u/1657497750</a>   </div>
+              
+                <!-- 下面是修改html格式的js代码，与内容无关，若无需求请勿修改 -->
+                <!-- author: Zhen Qin -->
+
+            </article>
+        </div>
+    </main>
+    <div class="nav-wrap">
+        <div class="nav"><button class="site-nav">
+                <div class="navicon"></div>
+            </button>
+            <ul class="nav_items">
+                <li class="nav_item"><a class="site-page" href="/%E5%9B%A2%E9%98%9F%E6%88%90%E5%91%98"> 团队成员</a></li>
+                <li class="nav_item"><a class="site-page" href="/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87"> 学术成果</a></li>
+                <li class="nav_item"><a class="site-page" href="/%E7%A7%91%E7%A0%94%E9%A1%B9%E7%9B%AE"> 科研项目</a></li>
+                <li class="nav_item"><a class="site-page" href="/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC"> 联系我们</a></li>
+            </ul>
+        </div>
+        <div class="cd-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+    </div>
+    <footer id="page_footer">
+        <div class="footer_wrap"><a href="https://github.com/IntelligentServiceLab" target="_blank" rel="noopener noreferrer"
+                style="text-decoration: none;"><img src="https://avatars.githubusercontent.com/u/104302745?s=200&v=4" style="width: 100px"></a>
+            <div style="float:right;"> <a href="https://www.hnust.edu.cn/" target="_blank" rel="noopener noreferrer"
+                    style="text-decoration: none;">
+                    <img src="./../img/hnust.png" style="width: 80px">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/shwondown.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/add_menu_icon.js"></script>
+<script>
+    var url = 'https://webapi.amap.com/maps?v=1.4.15&key=b8238f0da23b1e1d9aaa6fc935fba5dc';
+    var jsapi = document.createElement('script');
+    jsapi.charset = 'utf-8';
+    jsapi.src = url;
+
+
+    jsapi.onload = function () {
+        var map = new AMap.Map('map_container', {
+            zoom: 15,//级别
+            center: [112.91817, 27.90435],//中心点坐标
+        });
+
+        // 比例尺
+        AMap.plugin([
+            'AMap.Scale',
+        ], function () {
+            // 在图面添加工具条控件，工具条控件集成了缩放、平移、定位等功能按钮在内的组合控件
+            map.addControl(new AMap.Scale({}));
+        });
+
+        // 左上角工具条
+        AMap.plugin([
+            'AMap.ToolBar',
+        ], function () {
+            // 在图面添加工具条控件，工具条控件集成了缩放、平移、定位等功能按钮在内的组合控件
+            map.addControl(new AMap.ToolBar({
+                // 简易缩放模式，默认为 false
+                liteStyle: false
+            }));
+        });
+
+        // 鹰眼
+        var overView = AMap.plugin([
+            'AMap.OverView',
+        ], function () {
+            map.addControl(new AMap.OverView({
+                isOpen: true
+            }));
+        });
+
+        // var toolBar = new AMap.ToolBar({
+        //     visible: true
+        // });
+        // map.addControl(toolBar);
+
+        //实例化信息窗体
+        var content = [
+            "<font style=\"font-size: 1.2em;\"><strong>湖南科技大学IntelligentServiceLab</strong></font>",
+            "<font style=\"font-size: 0.9em;\">湘潭市雨湖区</font>"
+        ];
+
+        // 创建 infoWindow 实例    
+        var infoWindow = new AMap.InfoWindow({
+            content: content.join("<br>"),  //传入 dom 对象，或者 html 字符串
+            offset: new AMap.Pixel(0, -30)
+        });
+
+
+        //添加marker标记
+        function addMarker() {
+            map.clearMap();
+            var marker = new AMap.Marker({
+                map: map,
+                position: [112.91817, 27.90435],
+                title: "SCDM实验室",
+            });
+            //鼠标点击marker弹出自定义的信息窗体
+            AMap.event.addListener(marker, 'click', function () {
+                infoWindow.open(map, marker.getPosition());
+            });
+            infoWindow.open(map, marker.getPosition());
+        }
+
+        addMarker();
+
+        //关闭信息窗体
+        function closeInfoWindow() {
+            map.clearInfoWindow();
+        }
+    }
+    document.head.appendChild(jsapi);
+
+// concole.log('map loaded');
+// window.onLoad = function(){
+//     var map = new AMap.Map('map_container');
+//     concole.log('map loaded');
+// }
+</script>

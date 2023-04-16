@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>IntelligentServiceLab</title>
+    <link rel="shortcut icon" href="/img/scdm-logo.png">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <meta name="generator" content="Hexo 5.1.1">
+</head>
+
+<body>
+    <header id="page_header">
+        <div class="header_wrap">
+            <div id="blog_name"><a class="blog_title" id="site-name" href="/">IntelligentServiceLab</a>
+            </div><button class="menus_icon">
+                <div class="navicon"></div>
+            </button>
+            <ul class="menus_items">
+                <li class="menus_item"><a class="site-page" href="/%E5%9B%A2%E9%98%9F%E6%88%90%E5%91%98"> 团队成员</a></li>
+                <li class="menus_item"><a class="site-page" href="/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87"> 学术成果</a></li>
+                <li class="menus_item"><a class="site-page" href="/%E7%A7%91%E7%A0%94%E9%A1%B9%E7%9B%AE"> 科研项目</a></li>
+                <li class="menus_item"><a class="site-page" href="/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC"> 联系我们</a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="page_main">
+        <div class="page" itemscope itemtype="http://schema.org/CreativeWork">
+            <h1 class="page-title" >科研项目</h2>
+                <hr>
+                <div id="markdown-content" style="padding: 0 3.6rem">
+               </div>
+        </div>
+    </main>
+    <div class="nav-wrap">
+        <div class="nav"><button class="site-nav">
+                <div class="navicon"></div>
+            </button>
+            <ul class="nav_items">
+                <li class="nav_item"><a class="site-page" href="/%E5%9B%A2%E9%98%9F%E6%88%90%E5%91%98"> 团队成员</a></li>
+                <li class="nav_item"><a class="site-page" href="/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87"> 学术成果</a></li>
+                <li class="nav_item"><a class="site-page" href="/%E7%A7%91%E7%A0%94%E9%A1%B9%E7%9B%AE"> 科研项目</a></li>
+                <li class="nav_item"><a class="site-page" href="/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC"> 联系我们</a></li>
+            </ul>
+        </div>
+        <div class="cd-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+    </div>
+    <footer id="page_footer">
+        <div class="footer_wrap"><a href="https://github.com/IntelligentServiceLab" target="_blank" rel="noopener noreferrer"
+                style="text-decoration: none;"><img src="https://avatars.githubusercontent.com/u/104302745?s=200&v=4" style="width: 100px"></a>
+            <div style="float:right;"> <a href="https://www.hnust.edu.cn/" target="_blank" rel="noopener noreferrer"
+                    style="text-decoration: none;">
+                    <img src="./../img/hnust.png" style="width: 80px">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/shwondown.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/add_menu_icon.js"></script>
+</body>
+
+</html>
+<script>
+     fetch('科研项目.md')
+      .then(response => response.text())
+      .then(markdownText => {
+        const converter = new showdown.Converter();
+        const html = converter.makeHtml(markdownText);
+        document.getElementById("markdown-content").innerHTML = html;
+      })
+      .catch(error => console.log(error));
+</script>
