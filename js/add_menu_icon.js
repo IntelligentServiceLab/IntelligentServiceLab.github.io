@@ -1,8 +1,10 @@
 var menuIconMap = {};
-menuIconMap["团队成员"] = "fa-users";
-menuIconMap["学术成果"] = "fa-globe-asia";
+menuIconMap["团队成员"] = "fa-user-tie";
+menuIconMap["学术成果"] = "fa-newspaper";
 menuIconMap["科研项目"] = "fa-flask";
-menuIconMap["联系我们"] = "fa-map-marked-alt";
+menuIconMap["联系我们"] = "fa-phone";
+
+
 
 
 var hrefMenu = document.getElementsByClassName("site-page");
