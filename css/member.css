@@ -1,0 +1,49 @@
+#member_ul{
+    width: 1220px;
+    overflow: hidden;
+}
+#member_ul .member_li{
+    background: #f8f8f8;
+width: 285px;
+height: 350px;
+list-style: none;
+float: left;
+margin-right: 20px;
+margin-bottom: 30px;
+}
+.li-t{
+    width: 285px;
+height: 200px;
+}
+.li-t img{
+    vertical-align: middle;
+    max-width: 94%;
+max-height: 94%;
+width: auto !important;
+height: auto !important;
+border: 0;
+}
+.li-b{
+    padding: 0 25px;
+    margin: 0;
+}
+.name{
+    font-size: 16px;
+    font-weight: bold;
+    color: #373737;
+    text-decoration: none;
+    font-family: "Microsoft yahei";
+color: #000;
+outline: none;
+}
+.zxd li{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #5a5a5a;
+    list-style: none;
+    font-family: "Microsoft yahei";
+}
+*   {
+    margin: 0;
+padding: 0;
+}

@@ -534,7 +534,7 @@ blockquote p {
 }
 @media (min-width: 34em) {
   .page {
-    width: 82.5%;
+    width: 100%;
     float: right;
     margin-right: 0;
     -webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
