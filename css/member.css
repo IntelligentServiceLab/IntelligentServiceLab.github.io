@@ -1,5 +1,5 @@
 #member_ul{
-    width: 100%;
+    width: 1220px;
     overflow: hidden;
 }
 #member_ul .member_li{
@@ -43,10 +43,7 @@ outline: none;
     list-style: none;
     font-family: "Microsoft yahei";
 }
-*  {
+*   {
     margin: 0;
 padding: 0;
-}
-.zxd{
-    
 }
