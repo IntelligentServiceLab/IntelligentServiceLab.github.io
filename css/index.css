@@ -11,15 +11,15 @@
   src: url("/fonts/Damion-Regular.ttf");
 }
 body {
-  background-color: #fff;
-  background-image: url("/img/brick-wall.png");
+  /*background-color: #fff;*/
+  background-image: url("../img/HNUST.jpg");
+  background-size: 100px;
 }
 .side-card {
   background-color: #f8f9f9;
   border-radius: 3px;
 }
 .page {
-  background-color: #f8f9f9;
   border-radius: 3px;
 }
 .author-bio {
@@ -292,7 +292,7 @@ blockquote p {
 }
 #page_header {
   position: relative;
-  border-bottom: 1px solid #f2f3f3;
+  background-repeat:repeat-x;
   -webkit-animation: intro 0.3s both;
   animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -300,33 +300,81 @@ blockquote p {
   z-index: 20;
 }
 .header_wrap {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.6rem 2rem 1rem;
+  background-image: url("../img/head.png");
+  background-repeat:repeat-x;
+  max-width: 2000px;
+  /*padding: 1.6rem 2rem 6rem;*/
   font-size: 2rem;
 }
-#blog_name {
-  display: inline-block;
-  width: auto;
-  vertical-align: top;
+.first-image{
+  height: 930px;
+}
+.first-logo{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top:2%;
+  left:3%;
+}
+
+.all{
+  width:100%;
+  height: 930px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;/* 超出隐藏 */
+}
+.all .logo{
+  height: 930px;
+  width: 10000px;
+  animation: name 15s infinite alternate linear;/* 调用动画name 执行时间15s 循环 反向播放 匀速播放 */
+}
+.all .logo img{
+  width: 2000px;
+  height: 80px;
+  float: left;
+}
+/**@keyframes name{
+  0%,20%{
+    transform: translateX(0px);
+  }
+  24%,40%{
+    transform: translateX(-2000px);
+  }
+  44%,60%{
+    transform: translateX(-4000px);
+  }
+  64%,80%{
+    transform: translateX(-6000px);
+  }
+  84%,100%{
+    transform: translateX(-8000px);
+  }
+}**/
+
+.show-box{
+  height: 930px;
 }
 #blog_name a {
+  position: fixed;
+  top :2%;
+  left: 7%;
   display: block;
   margin: 0 1.6rem;
   padding: 0 0;
-  color: #ebedef;
-  font-weight: 600;
+  color: #ffffff;
+  font-weight: bold;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  font-family: "Damion";
+  font-family: "微软雅黑";
   font-size: 1.4em;
   text-shadow: #000 0.1em 0.1em 0.2em;
 }
 #blog_name a:hover {
-  color: #000;
+  color: rgba(19, 19, 18, 0.98);
 }
+
 @media (max-width: 34em) {
   .menus-open .menus_items {
     visibility: visible;
@@ -366,8 +414,10 @@ blockquote p {
   .menus_items li {
     display: block;
     border-bottom: 1px solid #f2f3f3;
+
   }
   .menus_items li a {
+
     display: block;
     color: #7a8288;
     font-size: 1.6rem;
@@ -414,18 +464,23 @@ blockquote p {
     list-style-type: none;
     margin: 0;
     clear: both;
+    position: fixed;
+    top:3%;
+    left: 70%;
   }
   .menus_items li {
     display: table-cell;
     vertical-align: middle;
   }
   .menus_items li a {
+    text-shadow: #001 0.1em 0.1em 0.2em;
     position: relative;
     display: block;
     margin: 0 1.6rem;
     padding: 0.8rem 0;
-    color: #14446a;
-    font-weight: normal;
+    color: #ffffff;
+    font-size: 20px ;
+    font-weight: bold;
     text-decoration: none;
   }
   .menus_items li a::before {
@@ -443,7 +498,7 @@ blockquote p {
     transform: scaleX(0);
   }
   .menus_items li a:hover {
-    color: #f93;
+    color: #151414;
     font-weight: bold;
   }
   .menus_items li a:hover::before {
@@ -460,7 +515,7 @@ blockquote p {
   margin-left: auto;
   margin-right: auto;
   clear: both;
-  margin-top: 3.2rem;
+  margin-top: 6rem;
   margin-bottom: 6.4rem;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
@@ -476,6 +531,9 @@ blockquote p {
   font-size: 3rem;
   padding: 0 1.2rem;
 }
+.container{
+
+}
 .page article {
   padding-left: 1.2rem;
   padding-right: 1.2rem;
@@ -484,7 +542,7 @@ blockquote p {
   font-size: 3rem;
 }
 .page article h2 {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 .page article h3 {
   font-size: 2.6rem;
@@ -497,7 +555,7 @@ blockquote p {
   font-size: 1.8rem;
 }
 .page article a {
-  color: #2196f3;
+  /*color: #2196f3;*/
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -537,8 +595,8 @@ blockquote p {
     width: 100%;
     float: right;
     margin-right: 0;
-    -webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
-    box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
+    /*-webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
+    box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);*/
   }
   .page .page-title {
     padding: 0 3.6rem;
@@ -826,12 +884,14 @@ blockquote p {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  color: #37474f;
+  color: #f4f5f6;
+  text-align: center;
+  font-size: 15px;
   -webkit-animation: intro 0.3s both;
   animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  background-color: #f2f3f3;
+  background-image: url(".././img/主页图片.jpg");
   border-top: 1px solid #bdc1c4;
 }
 #page_footer a {
@@ -850,7 +910,7 @@ blockquote p {
   margin-top: 0.8em;
   padding-right: 3.5em;
   padding-left: 3.5em;
-  color: #37474f;
+
   font-size: 1.68rem;
 }
 .nav-wrap {
@@ -1016,4 +1076,23 @@ blockquote p {
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgba(122,130,136,0.4);
+}
+.Title{
+  width: 60px;
+  font-weight: bold;
+  font-size: 100px;
+  position: relative;
+  right: -30%;
+}
+.teacher-image{
+  position: relative;
+  top:15px;
+}
+#teacher-introduct{
+  font-size: 18px;
+  position: relative;
+  height: 100px;
+  width:60%;
+  right: -20%;
+  top:-250px;
 }

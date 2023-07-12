@@ -3,38 +3,57 @@
     overflow: hidden;
 }
 #member_ul .member_li{
-    background: #f8f8f8;
-width: 285px;
-height: 350px;
-list-style: none;
-float: left;
-margin-right: 20px;
-margin-bottom: 30px;
+    width:285px;
+    height: 300px;
+    list-style: none;
+/*float: left;*/
+    margin-right: 20px;
+    margin-bottom: 30px;
+    /*border-bottom: 1px solid #bdc1c4;*/
 }
 .li-t{
     width: 285px;
-height: 200px;
+    height: 200px;
 }
 .li-t img{
     vertical-align: middle;
     max-width: 94%;
-max-height: 94%;
-width: auto !important;
-height: auto !important;
-border: 0;
+    max-height: 94%;
+    width: 180px;
+    height: auto !important;
+    border-color: #bdc1c4;
+    border-radius: 5px;
+    position: relative;
+    top: 20%;
+    left:5%;
+
 }
 .li-b{
+    position: relative;
+    top: -12%;
+    left:5%;
     padding: 0 25px;
     margin: 0;
 }
+.li-I{
+    height: 300px;
+    width: 1000px;
+    position: relative;
+    top:-68%;
+    right: -63%;
+    font-size: 20px;
+    /*border-bottom: #bdc1c4 solid 1px;*/
+}
 .name{
-    font-size: 16px;
+    font-size: 25px;
     font-weight: bold;
-    color: #373737;
+    color: #7a7c7e;
     text-decoration: none;
-    font-family: "Microsoft yahei";
-color: #000;
-outline: none;
+    font-family: "黑体";
+    position: relative;
+    left: 35px;
+    top:50px;
+    outline: none;
 }
 .zxd li{
     margin-top: 10px;
@@ -46,4 +65,7 @@ outline: none;
 *   {
     margin: 0;
 padding: 0;
+}
+#markdown-content{
+    font-size: 25px;
 }

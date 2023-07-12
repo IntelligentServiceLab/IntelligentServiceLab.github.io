@@ -1,0 +1,58 @@
+*{margin: 0;padding: 0;}
+#main{
+    width: 800px;height: 460px;
+    overflow: hidden;position: absolute;left:22.5%;top: 15%;border-radius: 20px;
+
+}
+#all-picture{
+    height:460px;
+    width: calc(800px * 5);/*如果加图片自行添加数目我这里5张图片所以宽度为5张图片横排的总尺寸，注意添加图片数目之后，动画内的参数也要相应的改变*/
+    animation: switch ease 15s infinite ;z-index: 9;
+}
+#all-picture img{
+    width:800px;height: 440px;float: left;
+}
+#all-picture:hover{animation-play-state: paused;}
+@keyframes switch{/*每个图片切换有两个阶段：位移切换和静置。所以中间的效果可以任意定制，我这里在每个阶段切换时都有一定的时间来静置*/
+    0%,10%{margin-left: 0;}
+    20%,30%{margin-left: -800px;}
+    40%,50%{margin-left: -1600px;}
+    60%,70%{margin-left: -2400px;}
+    80%,90%{margin-left: -3200px;}
+    100%{margin-left: 0px;}
+
+}
+@keyframes picture1{
+    0%{margin-left: -3200px;}
+    100%{margin-left: 0px;}
+}
+@keyframes picture2{
+    0%{margin-left: 0px;}
+    100%{margin-left: -800px}
+}
+@keyframes picture3{
+    0%{margin-left: -800px;}
+    100%{margin-left:-1600px}
+}
+@keyframes picture4{
+    0%{margin-left: -3200px;}
+    100%{margin-left:-2400px}
+}
+@keyframes picture5{
+    0%{margin-left: 0px;}
+    100%{margin-left:-3200px}
+}
+#a1:hover ~ #all-picture{animation: picture1 ease 0.5s forwards;}
+#a2:hover ~ #all-picture{animation: picture2 ease 0.5s forwards;}
+#a3:hover ~ #all-picture{animation: picture3 ease 0.5s forwards;}
+#a4:hover ~ #all-picture{animation: picture4 ease 0.5s forwards;}
+#a5:hover ~ #all-picture{animation: picture5 ease 0.5s forwards;}
+.num1{width: 160px;height: 20px;position: absolute;top:440px;left: 0px;}
+.num2{width: 160px;height: 20px;position: absolute;top:440px;left: 160px;}
+.num3{width: 160px;height: 20px;position: absolute;top:440px;left: 320px;}
+.num4{width: 160px;height: 20px;position: absolute;top:440px;left: 480px;}
+.num5{width: 160px;height: 20px;position: absolute;top:440px;left: 640px;}
+.num1,.num2,.num3,.num4,.num5{text-align: center;line-height: 20px;}
+a:hover{background-color:black;opacity:1;color: yellow;font-size: large;font-weight: bolder;}
+a{opacity:0.5;color:white;background-color: #000000;}
+a:hover ~ #all-picture:hover{animation-play-state: paused;}
