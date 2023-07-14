@@ -16,7 +16,7 @@
 }
 .nav{
     margin: 10px;
-    height: 1600px;
+    height: 1300px;
     width: 70%;
     background: #ffffff;
     overflow: hidden;
@@ -30,7 +30,7 @@
 }
 
 .nav ul li{
-    /*border-bottom: 1px solid #ccc;*/
+    /*border-bottom.jpg: 1px solid #ccc;*/
     font-size: 20px;
     font-family: 'Microsoft YaHei',SimSun,SimHei ,"STHeiti Light",STHeiti,"Lucida Grande", Tahoma,Arial, Helvetica, sans-serif;
     animation-name: run;
