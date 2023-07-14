@@ -19,14 +19,14 @@
 <header id="page_header">
     <div class="header_wrap" style="text-align: center;">
         <div id="blog_name" >
-            <img src="../img/head.png" style="width: 100%;height: 10%;">
+            <img src=".././img/bottom.jpg" style="width: 100%;height: 10%;">
             <a class="blog_title" id="site-name" href="./../index.html">IntelligentServiceLab</a>
             <a href="./../index.html"> <img class="first-logo" src="../img/hnust.png" style=""  ></a>
         </div>
     </div>
 </header>
 <div class="main-box">
-    <div class="nav">
+    <div class="nav"style="width:20%;">
         <div class="social-btns">
             <a class="btn facebook" href=".././近期要闻/index.html"><i class="fa fa-facebook">近期要闻</i></a>
             <a class="btn twitter" style="background-color: #dee0e1" href=".././团队成员/index.html"><i class="fa fa-twitter">团队成员</i></a>
@@ -36,52 +36,9 @@
             <a class="btn instagram" style="background-color: #dee0e1"href=".././联系我们/index.html"><i class="fa fa-instagram">联系我们</i></a>
         </div>
     </div>
-    <main id="news">
-        <div class="allnews">
-            <h1 style="text-align: center;position: relative;top:5%;right: 35%;">近期新闻</h1>
-            <div class="news_box">
-                <ul>
-                    <li>
-                        <p class="time">04-17</p>
-                        <p class="word">【中国教育报】首届基础教育湖湘论坛召开</p>
-                    </li>
-                    <li>
-                        <p class="time">04-17</p>
-                        <p class="word">【中国教育报】首届基础教育湖湘论坛召开</p>
-                    </li>
-                    <li>
-                        <p class="time">04-17</p>
-                        <p class="word">【中国教育报】首届基础教育湖湘论坛召开</p>
-                    </li>
-                    <li>
-                        <p class="time">04-17</p>
-                        <p class="word">【中国教育报】首届基础教育湖湘论坛召开</p>
-                    </li>
-                    <li>
-                        <p class="time">04-17</p>
-                        <p class="word">【中国教育报】首届基础教育湖湘论坛召开</p>
-                    </li>
-                    <li>
-                        <p class="time">04-17</p>
-                        <p class="word">【中国教育报】首届基础教育湖湘论坛召开</p>
-                    </li>
-                    <li>
-                        <p class="time">04-17</p>
-                        <p class="word">【中国教育报】首届基础教育湖湘论坛召开</p>
-                    </li>
-                    <li>
-                        <p class="time">04-17</p>
-                        <p class="word">【中国教育报】首届基础教育湖湘论坛召开</p>
-                    </li>
-                    <li>
-                        <p class="time">04-17</p>
-                        <p class="word">【中国教育报】首届基础教育湖湘论坛召开</p>
-                    </li>
-                    <li>
-                        <p class="time">04-17</p>
-                        <p class="word">【中国教育报】首届基础教育湖湘论坛召开</p>
-                    </li>
-                </ul>
+    <main id="page_main" style="width: 75%;">
+        <div class="page" itemscope itemtype="http://schema.org/CreativeWork">
+            <div id="markdown-content" style="padding: 0 3.6rem">
             </div>
         </div>
     </main>
@@ -96,4 +53,14 @@
 <script src="/js/add_menu_icon.js"></script>
 </body>
 </html>
+<script>
+    fetch('近期要闻.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
+            document.getElementById("markdown-content").innerHTML = html;
+        })
+        .catch(error => console.log(error));
+</script>
 
