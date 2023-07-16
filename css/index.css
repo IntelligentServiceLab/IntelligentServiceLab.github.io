@@ -300,7 +300,7 @@ blockquote p {
   z-index: 20;
 }
 .header_wrap {
-  background-image: url("../img/head.png");
+
   background-repeat:repeat-x;
   max-width: 2000px;
   /*padding: 1.6rem 2rem 6rem;*/
