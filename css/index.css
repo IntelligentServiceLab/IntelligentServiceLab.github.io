@@ -300,7 +300,6 @@ blockquote p {
   z-index: 20;
 }
 .header_wrap {
-
   background-repeat:repeat-x;
   max-width: 2000px;
   /*padding: 1.6rem 2rem 6rem;*/
@@ -310,11 +309,11 @@ blockquote p {
   height: 930px;
 }
 .first-logo{
-  position: fixed;
-  width: 80px;
-  height: 80px;
-  top:2%;
-  left:3%;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  /*left: -120%;
+  top:-20px;*/
 }
 
 .all{
@@ -334,31 +333,24 @@ blockquote p {
   height: 80px;
   float: left;
 }
-/**@keyframes name{
-  0%,20%{
-    transform: translateX(0px);
-  }
-  24%,40%{
-    transform: translateX(-2000px);
-  }
-  44%,60%{
-    transform: translateX(-4000px);
-  }
-  64%,80%{
-    transform: translateX(-6000px);
-  }
-  84%,100%{
-    transform: translateX(-8000px);
-  }
-}**/
 
 .show-box{
   height: 930px;
 }
+
+#blog_name {
+  max-width: 100%;
+}
+
+#blog_name img{
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
 #blog_name a {
-  position: fixed;
-  top :2%;
-  left: 10%;
+  position: absolute;
+  top :8%;
+  left: 13%;
   display: block;
   margin: 0 1.6rem;
   padding: 0 0;
@@ -368,7 +360,7 @@ blockquote p {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   font-family: "微软雅黑";
-  font-size: 2.5em;
+  font-size: 2.5vw;
   text-shadow: #000 0.1em 0.1em 0.2em;
 }
 #blog_name a:hover {
@@ -515,7 +507,7 @@ blockquote p {
   margin-left: auto;
   margin-right: auto;
   clear: both;
-  margin-top: 6rem;
+  margin-top: 7.8rem;
   margin-bottom: 6.4rem;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
