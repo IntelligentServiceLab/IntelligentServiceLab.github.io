@@ -1,0 +1,32 @@
+#news{
+    width: 150%;
+
+}
+.news_box{
+    overflow: hidden;
+    height: 50%;
+    position: relative;
+    top:10%;
+}
+.allnews{
+    position: relative;
+    left: 20%;
+    width:65%;
+    height: 100%;
+}
+.allnews ul li{
+    font-size: 20px;
+    font-family: 'Microsoft YaHei',SimSun,SimHei ,"STHeiti Light",STHeiti,"Lucida Grande", Tahoma,Arial, Helvetica, sans-serif;
+    animation-name: run;
+    animation-duration:5s;
+    animation-iteration-count :infinite;
+    animation-timing-function :ease-in;
+}
+@keyframes run{
+    0%,40% {
+        transform: translateY(0px);
+    }
+    40%,100%{
+        transform: translateY(-600px);
+    }
+}
