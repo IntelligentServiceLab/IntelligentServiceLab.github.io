@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>iService Lab</title>
+    <link rel="shortcut icon" href="/img/logo.png">
+    <link rel="stylesheet" href=".././css/index.css">
+    <link rel="stylesheet" href=".././css/list.css">
+    <link rel="stylesheet" href=".././css/member.css">
+    <link rel="stylesheet" href=".././css/all.min.css">
+    <link rel="stylesheet" href=".././css/news.css">
+    <link rel="stylesheet" href=".././css/navigation.css">
+    <link rel="stylesheet" href=".././css/news.css">
+    <meta name="generator" content="Hexo 5.1.1">
+</head>
+<body>
+<div id="blog_name">
+    <img class="background" src=".././img/bottom.jpg" >
+    <a id="site-name" href="../index.html">IntelligentServiceLab</a>
+    <a href="../index.html"> <img class="first-logo" src="../img/hnust.png"></a>
+</div>
+<div class="main-box">
+    <div class="nav"style="width:20%;">
+        <div class="social-btns">
+            <a class="btn facebook" href="../news/index.html"><i class="fa fa-facebook">近期要闻</i></a>
+            <a class="btn twitter" style="background-color: #dee0e1" href="../team/index.html"><i class="fa fa-twitter">团队成员</i></a>
+            <a class="btn pinterest" href="../publication/index.html"><i class="fa fa-pinterest">学术论文</i></a>
+            <a class="btn google" href="../project/index.html"><i class="fa fa-google">科研项目</i></a>
+            <a class="btn instagram" style="background-color: #dee0e1"href="../award/index.html"><i class="fa fa-instagram">荣誉奖励</i></a>
+            <a class="btn instagram" style="background-color: #dee0e1"href="../contact/index.html"><i class="fa fa-instagram">联系我们</i></a>
+        </div>
+    </div>
+    <main id="page_index_main"style="width: 75%">
+        <div class="page" itemscope itemtype="http://schema.org/CreativeWork">
+            <div id="markdown-content" style="padding: 0 3.6rem">
+            </div>
+        </div>
+    </main>
+</div>
+<footer id="page_footer">
+    <img src="../img/底部.jpg">
+    <div style="position:absolute;width:100%;height:auto;z-indent:2;left:0%;top:30%;font-size: 1vw;">
+        联系我们:guoshengkang@gmail.com</br>
+        地址:湖南省湘潭市雨湖区湖南科技大学
+    </div>
+</footer>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/shwondown.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/add_menu_icon.js"></script>
+</body>
+</html>
+<script>
+    fetch('近期要闻.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
+            document.getElementById("markdown-content").innerHTML = html;
+        })
+        .catch(error => console.log(error));
+</script>
+
