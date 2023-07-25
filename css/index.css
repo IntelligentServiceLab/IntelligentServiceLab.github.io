@@ -344,12 +344,12 @@ blockquote p {
 .first-logo{
   position: relative;
   left: -120%;
-  width: 7vw;
-  height: 7vw;
+  width: 8vw;
+  height: 8vw;
 }
 #blog_name a{
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 10%;
   display: inline;
   margin: 0 1.6rem;
@@ -360,7 +360,7 @@ blockquote p {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   font-family: "微软雅黑";
-  font-size: 3vw;
+  font-size: 4.2vw;
   text-shadow: #000 0.1em 0.1em 0.2em;
 }
 #blog_name a:hover {
@@ -1084,14 +1084,11 @@ blockquote p {
   right: -30%;
 }
 .teacher-image{
-  position: relative;
-  top:15px;
+  display: inline-block;
+
 }
 #teacher-introduct{
+  width: 65%;
   font-size: 18px;
-  position: relative;
-  height: 100px;
-  width:60%;
-  right: -20%;
-  top:-250px;
+  display: inline-block;
 }
