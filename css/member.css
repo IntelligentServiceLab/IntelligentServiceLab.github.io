@@ -11,20 +11,25 @@
     margin-bottom: 30px;
     /*border-bottom.jpg: 1px solid #bdc1c4;*/
 }
+.team-container{
+    margin-bottom: 7%;
+    display:table;
+}
 .li-t{
-    width: 150px;
-    height: 200px;
-    display: inline-block;
+    display:table-cell;
+    vertical-align:middle;
+
 }
 .li-t img{
     /*vertical-align: middle;*/
     max-width: 94%;
     max-height: 94%;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     height: auto !important;
     border-color: #bdc1c4;
     border-radius: 5px;
+
 }
 .li-b{
     position: relative;

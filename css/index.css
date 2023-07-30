@@ -344,8 +344,8 @@ blockquote p {
 .first-logo{
   position: relative;
   left: -120%;
-  width: 8vw;
-  height: 8vw;
+  width: 7vw;
+  height: 7vw;
 }
 #blog_name a{
   position: absolute;
@@ -366,7 +366,9 @@ blockquote p {
 #blog_name a:hover {
   color: rgba(19, 19, 18, 0.98);
 }
-
+#markdown-content{
+  font-size: 25px;
+}
 @media (max-width: 34em) {
   .menus-open .menus_items {
     visibility: visible;
@@ -868,6 +870,49 @@ blockquote p {
   .cv-links {
     margin: 0;
   }
+}
+.introImg_container{
+  position: relative;
+  top:-40px;
+  margin-inline:70px;
+}
+.introImg{
+  height: 250px;
+  width: 250px;
+}
+.link_container{
+  position: relative;
+  top:5px;
+  left: 20px;
+}
+.link{
+  display: inline;
+  color: rgb(242, 242, 242);
+  font-weight: bold;
+  font-family: 微软雅黑;
+  font-size: 30px;
+  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+  margin: 0px 1.6rem;
+  padding: 0px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out 0s;
+}
+.connect_container{
+  position: relative;
+  top:200px;
+  left: 20px;
+}
+.connect{
+  display: inline;
+  color: rgb(242, 242, 242);
+  font-weight: bold;
+  font-family: 微软雅黑;
+  font-size: 40px;
+  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+  margin: 0px 1.6rem;
+  padding: 0px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out 0s;
 }
 #page_footer {
   max-width: 100%;
