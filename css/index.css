@@ -890,13 +890,15 @@ blockquote p {
   display:table;
 }
 .teacher-image{
+  display:table-cell;
+  vertical-align:middle;
 
 }
 .teacher-image img{
   max-width: 94%;
   max-height: 94%;
-  width: 150px;
-  height: 150px;
+  width: 1500px;
+  height: 1500px;
   height: auto !important;
   border-color: #bdc1c4;
   border-radius: 5px;
@@ -904,7 +906,7 @@ blockquote p {
 .introduct-teacher{
   display:table-cell;
   vertical-align:middle;
-  width:60vw;
+  font-size: 25px;
 }
 .link{
   display: inline;
