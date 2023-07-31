@@ -29,7 +29,6 @@
     height: auto !important;
     border-color: #bdc1c4;
     border-radius: 5px;
-
 }
 .li-b{
     position: relative;
@@ -39,7 +38,7 @@
     margin: 0;
 }
 .li-I{
-    width: 50vw;
+    width: 60vw;
 }
 .name{
     font-size: 25px;

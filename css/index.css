@@ -885,13 +885,34 @@ blockquote p {
   top:5px;
   left: 20px;
 }
+.teacher-Info{
+  margin-bottom: 7%;
+  display:table;
+}
+.teacher-image{
+
+}
+.teacher-image img{
+  max-width: 94%;
+  max-height: 94%;
+  width: 150px;
+  height: 150px;
+  height: auto !important;
+  border-color: #bdc1c4;
+  border-radius: 5px;
+}
+.introduct-teacher{
+  display:table-cell;
+  vertical-align:middle;
+  width:60vw;
+}
 .link{
   display: inline;
-  color: rgb(242, 242, 242);
+  color: rgb(17, 17, 17);
   font-weight: bold;
   font-family: 微软雅黑;
   font-size: 30px;
-  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+  text-shadow: rgb(248, 247, 247) 0.1em 0.1em 0.2em;
   margin: 0px 1.6rem;
   padding: 0px;
   text-decoration: none;
@@ -904,11 +925,11 @@ blockquote p {
 }
 .connect{
   display: inline;
-  color: rgb(242, 242, 242);
+  color: rgb(24, 23, 23);
   font-weight: bold;
   font-family: 微软雅黑;
   font-size: 40px;
-  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+  text-shadow: rgb(246, 244, 244) 0.1em 0.1em 0.2em;
   margin: 0px 1.6rem;
   padding: 0px;
   text-decoration: none;
@@ -1128,12 +1149,4 @@ blockquote p {
   position: relative;
   right: -30%;
 }
-.teacher-image{
-  display: inline-block;
 
-}
-#teacher-introduct{
-  width: 65%;
-  font-size: 18px;
-  display: inline-block;
-}
