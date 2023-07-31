@@ -38,7 +38,10 @@
     margin: 0;
 }
 .li-I{
+    display:table-cell;
+    vertical-align:middle;
     width: 60vw;
+    font-size: 20px;
 }
 .name{
     font-size: 25px;

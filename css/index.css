@@ -897,8 +897,8 @@ blockquote p {
 .teacher-image img{
   max-width: 94%;
   max-height: 94%;
-  width: 1500px;
-  height: 1500px;
+  width: 2000px;
+  height:2000px;
   height: auto !important;
   border-color: #bdc1c4;
   border-radius: 5px;
@@ -913,7 +913,7 @@ blockquote p {
   color: rgb(17, 17, 17);
   font-weight: bold;
   font-family: 微软雅黑;
-  font-size: 30px;
+  font-size: 40px;
   text-shadow: rgb(248, 247, 247) 0.1em 0.1em 0.2em;
   margin: 0px 1.6rem;
   padding: 0px;
