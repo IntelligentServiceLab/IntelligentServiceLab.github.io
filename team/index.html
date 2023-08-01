@@ -38,6 +38,14 @@
             <h2 style="position:relative;left: 0px; top:0px;font-size: 40px">团队成员-研究生</h2>
             <div class="team-container">
             <div class="li-t">
+                <img src="./../img/member/肖勇.jpg">
+                <div class="li-N">肖勇</div>
+            </div>
+            <div  class="li-I" id="li-I7"  style="padding: 0 3.6rem;">
+            </div>
+            </div>
+            <div class="team-container">
+            <div class="li-t">
                 <img src="./../img/member/梁博文.jpg">
                 <div class="li-N">梁博文</div>
             </div>
@@ -204,6 +212,14 @@ padding: 10px; */
 </style>
 
 <script>
+     fetch('肖勇.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
+            document.getElementById("li-I7").innerHTML = html;
+        })
+        .catch(error => console.log(error));
     fetch('梁博文.md')
         .then(response => response.text())
         .then(markdownText => {
