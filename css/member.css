@@ -12,7 +12,7 @@
     /*border-bottom.jpg: 1px solid #bdc1c4;*/
 }
 .team-container{
-    margin-bottom: 7%;
+    margin-bottom: 3%;
     display:table;
 }
 .li-t{
@@ -30,12 +30,10 @@
     border-color: #bdc1c4;
     border-radius: 5px;
 }
-.li-b{
-    position: relative;
-    top: -12%;
-    left:5%;
-    padding: 0 25px;
-    margin: 0;
+.li-N{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 .li-I{
     display:table-cell;
