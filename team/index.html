@@ -41,7 +41,7 @@
                 <img src="./../img/member/梁博文.jpg">
                 <div class="li-N">梁博文</div>
             </div>
-            <div  class="li-I" id="li-I1"  style="padding: 0 3.6rem;">
+            <div  class="li-I" id="li-I6"  style="padding: 0 3.6rem;">
             </div>
             </div>
             <div class="team-container">
@@ -49,7 +49,7 @@
                     <img src="./../img/member/程航宇.jpg">
                     <div class="li-N">程航宇</div>
                 </div>
-                <div  class="li-I" id="li-I2"  style="padding: 0 3.6rem;">
+                <div  class="li-I" id="li-I5"  style="padding: 0 3.6rem;">
                 </div>
             </div>
             <div class="team-container">
@@ -57,7 +57,31 @@
                     <img src="./../img/member/张文强.jpg">
                     <div class="li-N">张文强</div>
                 </div>
+                <div  class="li-I" id="li-I4"  style="padding: 0 3.6rem;">
+                </div>
+            </div>
+            <div class="team-container">
+                <div class="li-t">
+                    <img src="./../img/member/谢润彬.jpg">
+                    <div class="li-N">谢润彬</div>
+                </div>
                 <div  class="li-I" id="li-I3"  style="padding: 0 3.6rem;">
+                </div>
+            </div>
+            <div class="team-container">
+                <div class="li-t">
+                    <img src="./../img/member/李兴.jpg">
+                    <div class="li-N">李兴</div>
+                </div>
+                <div  class="li-I" id="li-I2"  style="padding: 0 3.6rem;">
+                </div>
+            </div>
+            <div class="team-container">
+                <div class="li-t">
+                    <img src="./../img/member/丁领航.jpg">
+                    <div class="li-N">丁领航</div>
+                </div>
+                <div  class="li-I" id="li-I1"  style="padding: 0 3.6rem;">
                 </div>
             </div>
             <h2 style="position:relative;left: 0px; top: 0px;font-size: 40px">团队成员-本科生</h2>
@@ -180,24 +204,12 @@ padding: 10px; */
 </style>
 
 <script>
-    fetch('个人简介1.md')
-        .then(response => response.text())
-        .then(markdownText => {
-            const converter = new showdown.Converter();
-            const html = converter.makeHtml(markdownText);
-            document.getElementById("li-I4").innerHTML = html;
-            document.getElementById("li-I5").innerHTML = html;
-            document.getElementById("li-I6").innerHTML = html;
-            document.getElementById("li-I7").innerHTML = html;
-            document.getElementById("li-I8").innerHTML = html;
-        })
-        .catch(error => console.log(error));
     fetch('梁博文.md')
         .then(response => response.text())
         .then(markdownText => {
             const converter = new showdown.Converter();
             const html = converter.makeHtml(markdownText);
-            document.getElementById("li-I1").innerHTML = html;
+            document.getElementById("li-I6").innerHTML = html;
         })
         .catch(error => console.log(error));
     fetch('程航宇.md')
@@ -205,7 +217,7 @@ padding: 10px; */
         .then(markdownText => {
             const converter = new showdown.Converter();
             const html = converter.makeHtml(markdownText);
-            document.getElementById("li-I2").innerHTML = html;
+            document.getElementById("li-I5").innerHTML = html;
         })
         .catch(error => console.log(error));
     fetch('张文强.md')
@@ -213,7 +225,31 @@ padding: 10px; */
         .then(markdownText => {
             const converter = new showdown.Converter();
             const html = converter.makeHtml(markdownText);
+            document.getElementById("li-I4").innerHTML = html;
+        })
+        .catch(error => console.log(error));
+    fetch('谢润彬.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
             document.getElementById("li-I3").innerHTML = html;
+        })
+        .catch(error => console.log(error));
+        fetch('李兴.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
+            document.getElementById("li-I1").innerHTML = html;
+        })
+        .catch(error => console.log(error));
+        fetch('丁领航.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
+            document.getElementById("li-I1").innerHTML = html;
         })
         .catch(error => console.log(error));
 </script>
