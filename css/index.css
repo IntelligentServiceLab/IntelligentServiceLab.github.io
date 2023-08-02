@@ -908,6 +908,10 @@ blockquote p {
   vertical-align:middle;
   font-size: 25px;
 }
+#git_link:hover{
+  color: #6182b8;
+  font-size: 40px;
+}
 .link{
   display: inline;
   color: rgb(17, 17, 17);
@@ -936,6 +940,7 @@ blockquote p {
   padding: 0px;
   text-decoration: none;
   transition: all 0.2s ease-in-out 0s;
+
 }
 #page_footer {
   max-width: 100%;
@@ -946,8 +951,6 @@ blockquote p {
   height: auto;
   width: 100%;
   float: left;
-  margin-left: 0;
-  margin-right: 0;
   color: #f4f5f6;
   text-align: center;
   font-size: 15px;
@@ -955,12 +958,13 @@ blockquote p {
   animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  border-top: 1px solid #bdc1c4;
 }
 #page_footer img{
   max-width: 100%;
   min-width: 100%;
   height: auto;
+  position: relative;
+  bottom: -5px;
 }
 #page_footer a {
   font-family: "Brush Script MT", monospace;
@@ -968,8 +972,9 @@ blockquote p {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-#page_footer a:hover {
-  color: #2196f3;
+.connect_container a:hover{
+  color: #3d6ebd;
+  font-size: 40px;
 }
 .footer_wrap {
   margin-left: auto;
