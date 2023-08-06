@@ -36,10 +36,11 @@ body {
     transform: scale(1);
 }
 *.social-btns .btn .fa {
-    font-size: 50px;
+    font-size: 4rem;
     vertical-align: middle;
+    text-align: center;
     position: relative;
-    top:30%;
+
     right: 7%;
 }
 
@@ -53,7 +54,7 @@ body {
     display: block;
     background-color: #dedbd7;
     width: 95%;
-    height: 150px;
+    height:90%;
     line-height: 90px;
     margin: 40px 10px;
     text-align: center;

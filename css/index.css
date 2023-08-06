@@ -1001,9 +1001,10 @@ blockquote p {
   opacity: 1;
   pointer-events: auto;
 }
-.nav {
+#nav {
   height: 30px;
   width: 30px;
+
 }
 .site-nav {
   position: absolute;

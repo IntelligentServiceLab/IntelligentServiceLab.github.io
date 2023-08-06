@@ -16,12 +16,13 @@
     display:table;
 }
 .li-t{
+    width: 300px;
     display:table-cell;
     vertical-align:middle;
 
 }
 .li-t img{
-    /*vertical-align: middle;*/
+    vertical-align: middle;
     max-width: 94%;
     max-height: 94%;
     width: 150px;
@@ -31,6 +32,8 @@
     border-radius: 5px;
 }
 .li-N{
+    position: relative;
+    left: -25%;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
