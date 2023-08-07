@@ -22,6 +22,8 @@
 
 }
 .li-t img{
+    position: relative;
+   left: 20%;
     vertical-align: middle;
     max-width: 94%;
     max-height: 94%;
@@ -32,8 +34,8 @@
     border-radius: 5px;
 }
 .li-N{
-    width: 150px;
-    text-align: center;
+    width: 155px;
+    text-align: right;
     font-weight: bold;
     font-size: 20px;
 }
@@ -41,6 +43,12 @@
     display:table-cell;
     vertical-align:middle;
     width: 60vw;
+    font-size: 20px;
+}
+.li-Intro{
+    width: 240px;
+    text-align: center;
+    font-weight: bold;
     font-size: 20px;
 }
 .name{
