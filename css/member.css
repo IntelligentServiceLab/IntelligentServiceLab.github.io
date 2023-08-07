@@ -34,7 +34,6 @@
     border-radius: 5px;
 }
 .li-N{
-    /*width: 155px;*/
     text-align: center;
     font-weight: bold;
     font-size: 2vw;
@@ -46,10 +45,9 @@
     font-size: 2vw;
 }
 .li-Intro{
-    width: 240px;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1vw;
 }
 .name{
     font-size: 25px;
