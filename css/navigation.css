@@ -36,7 +36,7 @@ body {
     transform: scale(1);
 }
 *.social-btns .btn .fa {
-    font-size: 4rem;
+    font-size: 3vw;
     vertical-align: middle;
     text-align: center;
     position: relative;

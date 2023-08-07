@@ -11,8 +11,8 @@
   src: url("/fonts/Damion-Regular.ttf");
 }
 body {
-  /*background-color: #fff;*/
-  background-image: url("../img/HNUST.jpg");
+  /*background-colo*: #fff;*/
+  /*background-image: url("../img/HNUST.jpg");*/
   background-size: 100px;
 }
 .side-card {
@@ -367,7 +367,7 @@ blockquote p {
   color: rgba(19, 19, 18, 0.98);
 }
 #markdown-content{
-  font-size: 25px;
+  font-size:2vw;
 }
 @media (max-width: 34em) {
   .menus-open .menus_items {
@@ -890,6 +890,7 @@ blockquote p {
   display:table;
 }
 .teacher-image{
+  width: 300px;
   display:table-cell;
   vertical-align:middle;
 
@@ -906,7 +907,7 @@ blockquote p {
 .introduct-teacher{
   display:table-cell;
   vertical-align:middle;
-  font-size: 25px;
+  font-size: 2vw;
 }
 #git_link:hover{
   color: #6182b8;
@@ -917,7 +918,7 @@ blockquote p {
   color: rgb(17, 17, 17);
   font-weight: bold;
   font-family: 微软雅黑;
-  font-size: 35px;
+  font-size: 2.5vw;
   text-shadow: rgb(248, 247, 247) 0.1em 0.1em 0.2em;
   margin: 0px 1.6rem;
   padding: 0px;
@@ -934,7 +935,7 @@ blockquote p {
   color: rgb(24, 23, 23);
   font-weight: bold;
   font-family: 微软雅黑;
-  font-size: 35px;
+  font-size: 2.5vw;
   text-shadow: rgb(246, 244, 244) 0.1em 0.1em 0.2em;
   margin: 0px 1.6rem;
   padding: 0px;
