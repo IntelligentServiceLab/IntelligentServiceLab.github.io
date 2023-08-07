@@ -36,7 +36,6 @@
     <main id="page_index_main"style="width: 75%">
         <div class="page" itemscope itemtype="http://schema.org/CreativeWork">
             <h2 style="position:relative;left: 0px; top:0px;font-size: 40px">团队成员-研究生</h2>
-            <div style="display: flex">
             <div class="team-container">
             <div class="li-t">
                 <img src="./../img/member/肖勇.jpg">
@@ -51,7 +50,6 @@
                 <div class="li-N">梁博文</div>
             </div>
             <div  class="li-I" id="li-I6"  style="padding: 0 3.6rem;">
-            </div>
             </div>
             </div>
             <div class="team-container">
@@ -95,6 +93,7 @@
                 </div>
             </div>
             <h2 style="position:relative;left: 0px; top: 0px;font-size: 40px">团队成员-本科生</h2>
+
         </div>
     </main>
 </div>
@@ -259,18 +258,22 @@ padding: 10px; */
          var distanceToBottom = getDistanceToBottom();
          console.log(scrollY)
          console.log('fibu'+distanceToBottom)
-         if (scrollY > 250&&distanceToBottom>50) {
+         if (scrollY > 250 && distanceToBottom > 50) {
              divElement.style.position="sticky"
              divElement.style.top="0%";
              divElement.style.display="block";
-
+            console.log('fudong')
          }
-             // if(distanceToBottom<50){
-             //     divElement.style.top="-25%";
-         // }
          else {
              divElement.style.position="relative"
+             console.log('relative')
          }
+              if(distanceToBottom<50){
+                  divElement.style.position="sticky"
+                  divElement.style.top="-25%";
+                  console.log('dibufudong')
+          }
+
      });
 
 </script>
