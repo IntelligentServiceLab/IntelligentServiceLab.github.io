@@ -37,7 +37,7 @@ body {
 }
 *.social-btns .btn .fa {
     font-size:3vw;
-    /*min-height: 90px;*/
+    max-height: 3vw;
     vertical-align: middle;
     text-align: center;
     position: relative;
