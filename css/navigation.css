@@ -36,18 +36,19 @@ body {
     transform: scale(1);
 }
 *.social-btns .btn .fa {
-    font-size: 3vw;
+    font-size:3vw;
+    /*min-height: 90px;*/
     vertical-align: middle;
     text-align: center;
     position: relative;
-
     right: 7%;
+    margin-top: 20px;
+    margin-bottom:20px;
 }
 
 .social-btns {
-    height: 90px;
-    /*margin: 80px auto;*/
-    font-size: 0;
+    vertical-align: center;
+    font-size: 0px;
     text-align: center;
 }
 .social-btns .btn {
