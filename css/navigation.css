@@ -42,8 +42,8 @@ body {
     text-align: center;
     position: relative;
     right: 7%;
-    margin-top: 20px;
-    margin-bottom:20px;
+    margin-top: 10px;
+    margin-bottom:10px;
 }
 
 .social-btns {
@@ -57,7 +57,7 @@ body {
     width: 95%;
     height:90%;
     line-height: 90px;
-    margin: 30px 15px;
+    margin: 22px 15px;
     text-align: center;
     position: relative;
     overflow: hidden;
