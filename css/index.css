@@ -919,7 +919,7 @@ blockquote p {
   color: rgb(17, 17, 17);
   font-weight: bold;
   font-family: 微软雅黑;
-  font-size: 2vw;
+  font-size: 1.5vw;
   text-shadow: rgb(248, 247, 247) 0.1em 0.1em 0.2em;
   margin: 0px 1.6rem;
   padding: 0px;
@@ -936,7 +936,7 @@ blockquote p {
   color: rgb(24, 23, 23);
   font-weight: bold;
   font-family: 微软雅黑;
-  font-size: 2vw;
+  font-size: 1.5vw;
   text-shadow: rgb(246, 244, 244) 0.1em 0.1em 0.2em;
   margin: 0px 1.6rem;
   padding: 0px;
