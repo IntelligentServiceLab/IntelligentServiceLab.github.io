@@ -16,9 +16,9 @@
     display:table;
 }
 .li-t{
-    width: 300px;
-    display:table-cell;
-    vertical-align:middle;
+    width: 250px;
+    /*display:table-cell;*/
+    /*vertical-align:middle;*/
 
 }
 .li-t img{

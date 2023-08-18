@@ -908,7 +908,7 @@ blockquote p {
 .introduct-teacher{
   display:table-cell;
   vertical-align:middle;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 #git_link:hover{
   color: #6182b8;
@@ -1004,7 +1004,10 @@ blockquote p {
 #nav {
   height: 30px;
   width: 30px;
-
+}
+.nav{
+  height: 30px;
+  width: 30px;
 }
 .site-nav {
   position: absolute;
