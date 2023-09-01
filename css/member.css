@@ -16,14 +16,14 @@
     display:table;
 }
 .li-t{
-    width: 250px;
+    width:15vw;
     /*display:table-cell;*/
     /*vertical-align:middle;*/
 
 }
 .li-t img{
     position: relative;
-    left: 20%;
+    left: 18%;
     vertical-align: middle;
     max-width: 94%;
     max-height: 94%;

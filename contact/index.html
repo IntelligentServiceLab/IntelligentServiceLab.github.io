@@ -243,7 +243,13 @@ padding: 10px; */
         var distanceToBottom = getDistanceToBottom();
         console.log(scrollY)
         console.log('fibu'+distanceToBottom)
-        if (scrollY > 250 && distanceToBottom > 50) {
+        // if (scrollY > 250 && distanceToBottom > 50) {
+        //     divElement.style.position="sticky"
+        //     divElement.style.top="0%";
+        //     divElement.style.display="block";
+        //     console.log('fudong')
+        // }
+        if (scrollY > 250 ) {
             divElement.style.position="sticky"
             divElement.style.top="0%";
             divElement.style.display="block";
@@ -253,11 +259,11 @@ padding: 10px; */
             divElement.style.position="relative"
             console.log('relative')
         }
-        if(distanceToBottom<50){
-            divElement.style.position="sticky"
-            divElement.style.top="-25%";
-            console.log('dibufudong')
-        }
+        // if(distanceToBottom<50){
+        //     divElement.style.position="sticky"
+        //     divElement.style.top="-25%";
+        //     console.log('dibufudong')
+        // }
 
     });
 

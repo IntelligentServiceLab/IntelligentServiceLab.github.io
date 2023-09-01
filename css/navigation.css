@@ -42,11 +42,13 @@ body {
     text-align: center;
     position: relative;
     right: 7%;
+    top:9%;
     margin-top: 10px;
     margin-bottom:10px;
 }
 
 .social-btns {
+    height: 80vh;
     vertical-align: center;
     font-size: 0px;
     text-align: center;
@@ -55,8 +57,8 @@ body {
     display: block;
     background-color: #dedbd7;
     width: 95%;
-    height:90%;
-    line-height: 90px;
+    height:12%;
+    /*line-height: 90px;*/
     margin: 22px 15px;
     text-align: center;
     position: relative;
