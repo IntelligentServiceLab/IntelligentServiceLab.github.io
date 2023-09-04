@@ -16,7 +16,7 @@
     display:table;
 }
 .li-t{
-    width:12vw;
+    width:11.5vw;
     /*display:table-cell;*/
     /*vertical-align:middle;*/
 
@@ -34,6 +34,13 @@
     border-radius: 5px;
 }
 .li-N{
+    position: relative;
+    left: 18%;
+    max-width: 94%;
+    max-height: 94%;
+    width: 150px;
+    height: 150px;
+    height: auto !important;
     text-align: center;
     font-weight: bold;
     font-size: 1.2vw;
@@ -45,6 +52,13 @@
     font-size: 1.2vw;
 }
 .li-Intro{
+    position: relative;
+    left: 18%;
+    max-width: 94%;
+    max-height: 94%;
+    width: 150px;
+    height: 150px;
+    height: auto !important;
     text-align: center;
     font-weight: bold;
     font-size: 1vw;
