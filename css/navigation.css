@@ -42,13 +42,15 @@ body {
     text-align: center;
     position: relative;
     right: 7%;
-    top:9%;
-    margin-top: 10px;
-    margin-bottom:10px;
+    /*top:20%;*/
+    bottom: -25%;
+
 }
 
 .social-btns {
-    height: 80vh;
+    height: 40vw;
+    min-height:400px;
+    /*width: 5vw;*/
     vertical-align: center;
     font-size: 0px;
     text-align: center;
