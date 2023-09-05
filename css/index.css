@@ -992,6 +992,7 @@ blockquote p {
 #nav {
   height: 80vh;
   /*width: 30px;*/
+  margin-top:22px;
 }
 .nav{
   height: 30px;
