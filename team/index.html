@@ -274,6 +274,31 @@
 <!--</style>-->
 
 <script>
+    fetch('王洋.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
+            document.getElementById("li-I7").innerHTML = html;
+        })
+        .catch(error => console.log(error));
+    fetch('王祯.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
+            document.getElementById("li-I7").innerHTML = html;
+        })
+        .catch(error => console.log(error));
+    fetch('周维克.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
+            document.getElementById("li-I7").innerHTML = html;
+        })
+        .catch(error => console.log(error));
+    
      fetch('肖勇.md')
         .then(response => response.text())
         .then(markdownText => {
