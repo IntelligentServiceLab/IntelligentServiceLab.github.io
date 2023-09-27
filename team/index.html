@@ -298,6 +298,30 @@
 <!--</style>-->
 
 <script>
+    fetch('封建华.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
+            document.getElementById("li-I10").innerHTML = html;
+        })
+        .catch(error => console.log(error));
+    fetch('任宏帅.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
+            document.getElementById("li-I10").innerHTML = html;
+        })
+        .catch(error => console.log(error));
+    fetch('陈卓.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
+            document.getElementById("li-I10").innerHTML = html;
+        })
+        .catch(error => console.log(error));
     fetch('王洋.md')
         .then(response => response.text())
         .then(markdownText => {
