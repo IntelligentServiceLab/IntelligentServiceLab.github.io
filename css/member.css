@@ -28,7 +28,7 @@
     max-width: 94%;
     max-height: 94%;
     width: 150px;
-    height: 150px;
+    height: auto;
     height: auto !important;
     border-color: #bdc1c4;
     border-radius: 5px;
