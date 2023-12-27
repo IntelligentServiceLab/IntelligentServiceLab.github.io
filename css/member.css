@@ -28,11 +28,10 @@
     max-width: 94%;
     max-height: 94%;
     width: 150px;
-    height: auto;
-    height: 165px !important;
+    height: 150px;
+    height: auto !important;
     border-color: #bdc1c4;
     border-radius: 5px;
-    object-fit: contain;
 }
 .li-N{
     position: relative;
