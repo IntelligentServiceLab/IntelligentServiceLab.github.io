@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>iService Lab</title>
+    <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/member.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="prerender" href="./team/index.html">
+    <link rel="prerender" href="./img">
+    <link rel="prerender" href="./publication/index.html">
+    <link rel="prerender" href="./contact/index.html">
+    <meta name="generator" content="Hexo 5.1.1">
+</head>
+<body>
+<div id="blog_name">
+    <img class="background" src=".././img/bottom.webp" >
+    <a id="site-name" href="./">IntelligentServiceLab</a>
+    <a href="./"> <img class="first-logo" src="../img/hnust.webp"></a>
+</div>
+<div class="main-box">
+    <div id="nav" style="width:20%;">
+        <div class="social-btns">
+            <a class="btn facebook" href="news"><i class="fa fa-facebook">近期要闻</i></a>
+            <a class="btn twitter" style="background-color: #dee0e1" href="team"><i class="fa fa-twitter">团队成员</i></a>
+            <a class="btn pinterest" href="publication"><i class="fa fa-pinterest">科研成果</i></a>
+            <a class="btn google" href="project"><i class="fa fa-google">科研项目</i></a>
+            <a class="btn instagram" style="background-color: #dee0e1" href="award"><i class="fa fa-instagram">荣誉奖励</i></a>
+            <a class="btn instagram" style="background-color: #dee0e1" href="contact"><i class="fa fa-instagram">联系我们</i></a>
+        </div>
+    </div>
+    <main id="page_index_main"style="width: 75%">
+        <div class="page" itemscope itemtype="http://schema.org/CreativeWork">
+            <div id="markdown-content" style="padding: 0 3.6rem 3.6rem; ">
+            </div>
+            <img src="img/introduct_enhance.webp" style="margin-bottom: 50px;">
+                    <h2 style="font-size:2.1vw;">教师简介</h2>
+            <div class="teacher-Info">
+                <div class="teacher-image">
+                    <img src="img/teacher_image.webp">
+                </div>
+                <div  class="introduct-teacher" id="teacher-introduct"  style="padding: 0 3.6rem;">
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<footer id="page_footer">
+    <img src="img/底部.webp">
+    <div style="position:absolute;width:100%;height:auto;z-indent:2;left:0%;top:30%;font-size: 1vw;text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;font-weight: bold">
+        联系我们: guoshengkang@gmail.com</br>
+        地址: 湖南省湘潭市雨湖区湖南科技大学计算机科学与工程学院</br>
+        Copyright © 智能服务实验室
+    </div>
+</footer>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/shwondown.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/add_menu_icon.js"></script>
+</body>
+</html>
+<script>
+
+
+
+    var divElement = document.getElementById("nav");
+
+    function getDistanceToBottom() {
+        const scrollHeight = document.documentElement.scrollHeight;
+        const scrollTop = document.documentElement.scrollTop;
+        const clientHeight = document.documentElement.clientHeight;
+        return scrollHeight - (scrollTop + clientHeight);
+    }
+
+
+    window.addEventListener('scroll', function() {
+        var scrollY = document.documentElement.scrollTop;
+        var distanceToBottom = getDistanceToBottom();
+        console.log(scrollY)
+        console.log('fibu'+distanceToBottom)
+        // if (scrollY > 250 && distanceToBottom > 50) {
+        //     divElement.style.position="sticky"
+        //     divElement.style.top="0%";
+        //     divElement.style.display="block";
+        //     console.log('fudong')
+        // }
+        if (scrollY > 250 ) {
+            divElement.style.position="sticky"
+            divElement.style.top="0%";
+            divElement.style.display="block";
+            console.log('fudong')
+        }
+        else {
+            divElement.style.position="relative"
+            console.log('relative')
+        }
+        // if(distanceToBottom<50){
+        //     divElement.style.position="sticky"
+        //     divElement.style.top="-25%";
+        //     console.log('dibufudong')
+        // }
+
+    });
+    fetch('实验室介绍.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
+            document.getElementById("markdown-content").innerHTML = html;
+        })
+        .catch(error => console.log(error));
+    fetch('个人简介1.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(markdownText);
+            document.getElementById("teacher-introduct").innerHTML = html;
+        })
+        .catch(error => console.log(error));
+
+</script>

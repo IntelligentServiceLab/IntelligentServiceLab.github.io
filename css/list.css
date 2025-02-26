@@ -1,0 +1,157 @@
+.main-box{
+    width: 100%;
+    display: flex;
+}
+.news {
+    position: relative;
+    margin: 10px;
+    height: 700px;
+    width: 90%;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    display: block ;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.nav{
+    margin: 10px;
+    height: 1300px;
+    width: 70%;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.nav ul{
+    list-style: none;
+    padding:0 10px !important;
+    position: relative;
+    top: -30px;
+}
+
+.nav ul li{
+    /*border-bottom.webp: 1px solid #ccc;*/
+    font-size: 20px;
+    font-family: 'Microsoft YaHei',SimSun,SimHei ,"STHeiti Light",STHeiti,"Lucida Grande", Tahoma,Arial, Helvetica, sans-serif;
+    animation-name: run;
+    /* 持续时间 */
+    animation-duration:6s;
+    animation-iteration-count :infinite;
+    animation-timing-function :ease-in;
+}
+@keyframes run{
+    0%,40% {
+        transform: translateY(80px);
+    }
+   40%,100%{
+       transform: translateY(-300px);
+   }
+}
+
+.nav ul li .time{
+    color:#757575 !important;
+}
+#page_index_main{
+    margin: 20px;
+    margin-top:38px;
+    /*width: 70%;*/
+    height: 200%;
+
+}
+#page_index_main .page{
+    width: 100%;
+    height: 100%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    /* background-color: #2196F3;
+padding: 10px; */
+}
+
+.grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 8px;
+    margin-bottom: 10px;
+    /* font-size: 30px; */
+    text-align: center;
+}
+
+.div-gallery-item-container {
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 5px;
+    border: 0.7px solid #AAAAAA;
+    margin: 5px;
+    min-height: 500px;
+}
+
+.img-gallery {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.div-name {
+    margin-top: 3px;
+    text-align: left;
+}
+
+.font-title {
+    font-size: 1.22em;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.font-sub-title {
+    font-size: 0.85em;
+    padding-left: 10px;
+    margin-top: -3px;
+    color: #808B96;
+}
+
+.div-description {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 8px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.font-plain-title {
+    font-size: 1.22em;
+    font-weight: bold;
+}
+
+.font-plain-sub-title {
+    font-size: 0.85em;
+    padding-left: 10px;
+    margin-top: -3px;
+    color: #808B96;
+}
+
+.font-plain-description {
+    padding-left: 25px;
+}
+.broadside{
+    height: 100%;
+    width: 300px;
+    margin: 10px;
+    display: inline;
+    transition: all 0.3s;
+}
+.broadside:hover {
+    box-shadow: 0 16px 32px 0 rgba(48, 55, 66, 0.15);/* 鼠标悬浮时盒子出现的阴影 */
+    transform: translate(0, -20px);/* 鼠标悬浮时盒子上移10px */
+}
+#page1{
+    display: inline;
+}
+#page2{
+    display: inline;
+}
+#page3{
+    display: inline;
+}
+
+#page4{
+    display: inline;
+}
