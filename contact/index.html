@@ -113,32 +113,36 @@
 
 <style type="text/css">
     .outer_container {
-    display: flex;                 /* 横向排列子元素 */
-    justify-content: center;       /* 居中显示 */
-    align-items: flex-start;       /* 顶部对齐 */
-    flex-wrap: wrap;               /* 当屏幕窄时自动换行 */
-    gap: 80px;                     /* 两列之间的间距 */
+    display: flex;
+    justify-content: center;      /* 居中 */
+    align-items: flex-start;      /* 顶部对齐 */
+    flex-wrap: nowrap;            /* 固定双列，不换行 */
+    gap: 8vw;                     /* 列间距随屏幕宽度变化 */
     margin-bottom: 100px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .connect_container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    min-width: 250px;
+    gap: 1vh;
+    min-width: 240px;             /* 防止文字挤压 */
 }
 
 .connect {
     color: #3e454b;
     text-shadow: none;
-    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem); /* 自适应字体大小 */
     text-decoration: none;
 }
 
 .connect.title {
-    font-size: 2vw;
+    font-size: clamp(1.2rem, 2vw, 2rem);
     font-weight: bold;
+    margin-bottom: 0.8rem;
 }
+
 
 /* 响应式：小屏幕时自动变为单列 */
 @media (max-width: 768px) {
