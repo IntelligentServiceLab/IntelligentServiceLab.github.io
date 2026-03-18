@@ -15,20 +15,21 @@
 </head>
     
 <style>
-    /* 让图片和文字保持居中对齐 */
+    /* 让图片和下方的文字保持绝对居中对齐 */
     .team-container .li-t {
         display: flex;
         flex-direction: column;
-        align-items: center;  /* 核心：保证文字和图片水平居中 */
+        align-items: center;  
         text-align: center;
     }
 
-    /* 强制统一所有照片的大小 */
+    /* 强制统一所有照片的大小和完美比例 */
     .team-container .li-t img {
-        width: 128px !important;   /* 统一宽度 */
-        height: 179px !important;  /* 统一高度，保持其他证件照的比例 */
-        object-fit: cover;         /* 核心：让曹烨这种偏方的照片自动居中裁剪，不变形 */
-        margin-bottom: 10px;       /* 增加一点照片和文字的间距 */
+        width: 125px !important;    /* 显示宽度 */
+        height: 175px !important;   /* 按照 1280:1792 的标准比例完美对应 */
+        object-fit: cover;          /* 核心：让曹烨的照片自动居中裁剪，完美融入这个比例，绝不变形 */
+        margin-bottom: 8px;         /* 照片和下方名字的间距 */
+        border-radius: 2px;         /* 可选：加一点点圆角看起来更精致，不需要可以删掉这行 */
     }
 </style>
 
