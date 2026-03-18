@@ -14,6 +14,25 @@
     <meta name="generator" content="Hexo 5.1.1">
 </head>
     
+<style>
+    /* 让图片和文字保持居中对齐 */
+    .team-container .li-t {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  /* 核心：保证文字和图片水平居中 */
+        text-align: center;
+    }
+
+    /* 强制统一所有照片的大小 */
+    .team-container .li-t img {
+        width: 128px !important;   /* 统一宽度 */
+        height: 179px !important;  /* 统一高度，保持其他证件照的比例 */
+        object-fit: cover;         /* 核心：让曹烨这种偏方的照片自动居中裁剪，不变形 */
+        margin-bottom: 10px;       /* 增加一点照片和文字的间距 */
+    }
+</style>
+
+    
 <body>
 <div id="blog_name">
     <img class="background" src="../img/bottom.webp" >
