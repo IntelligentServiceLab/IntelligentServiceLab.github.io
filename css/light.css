@@ -3,7 +3,7 @@
   position: absolute;
   right: 0.3%;
   top: 0;
-  width: 5vw;
+  width: clamp(24px, 5vw, 70px);
   z-index: 15;
   display: flex;
   flex-direction: column;
@@ -55,12 +55,13 @@
 
 /* ---- 开关 ---- */
 .light-toggle-wrap {
-  width: 100%;
-  aspect-ratio: 70 / 24;
+  width: 62%;
+  aspect-ratio: 50 / 18;
   position: relative;
   cursor: pointer;
   z-index: 2;
   flex-shrink: 0;
+  margin-top: -0.6vw;
 }
 
 .light-track {
@@ -107,23 +108,11 @@
   left: calc(100% - 31.25% - 3.1%);
 }
 
-.light-toggle-wrap:active .light-knob {
-  box-shadow: 0 0 0 0.35vw rgba(255, 160, 40, 0.18);
-}
 
 /* 开关点击缩放反馈 */
 .light-toggle-wrap:active {
   transform: scale(0.94);
   transition: transform 0.12s ease;
-}
-
-
-/* 移动端扩大点击热区 */
-@media (max-width: 560px) {
-  .light-toggle-wrap {
-    min-height: 44px;
-    min-width: 44px;
-  }
 }
 
 /* 深色模式适配 */

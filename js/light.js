@@ -1,5 +1,9 @@
 (function () {
-  /* ---- 注入灯泡 HTML ---- */
+  /*Firebase Realtime Database*/
+  var FIREBASE_URL = 'https://light-state-17fb5-default-rtdb.firebaseio.com';
+  var STATE_PATH   = '/light/online.json';
+
+  /* 注入灯泡 HTML */
   var blog = document.getElementById('blog_name');
   if (!blog) return;
 
@@ -40,7 +44,7 @@
 
   blog.insertAdjacentHTML('beforeend', html);
 
-  /* ---- 开关逻辑 ---- */
+  /* ---- DOM 引用 ---- */
   var toggle = document.getElementById('light-toggle');
   if (!toggle) return;
 
@@ -50,45 +54,76 @@
   var glass = document.getElementById('light-bulb-glass');
 
   var STORAGE_KEY = 'light-switch-state';
-  var isOnline;
+  var isOnline = false;
 
-  try {
-    isOnline = localStorage.getItem(STORAGE_KEY) === 'online';
-  } catch (e) {
-    isOnline = false;
+  /* ---- 从 Firebase 读取远程状态 ---- */
+  function fetchRemoteState() {
+    return fetch(FIREBASE_URL + STATE_PATH + '?t=' + Date.now())
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function (data) { return !!data; })
+      .catch(function () { return null; });
   }
 
+  /* ---- 推送状态到 Firebase ---- */
+  function pushRemoteState(online) {
+    return fetch(FIREBASE_URL + STATE_PATH, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(online)
+    }).catch(function () { /* 静默失败，本地已生效 */ });
+  }
+
+  //应用状态到 UI
   function applyState(online) {
     if (online) {
-      track.style.background = 'linear-gradient(90deg, #ff781e, #ffa028)';
+      track.style.background = 'linear-gradient(90deg, #c4a838, #d4b850)';
       text.textContent = '开';
       text.style.color = '#222';
       toggle.classList.add('is-online');
-
       glow.style.opacity = '0.85';
       glass.setAttribute('fill',   'url(#bulb-on)');
       glass.setAttribute('stroke', '#e8b830');
-
     } else {
       track.style.background = '#cccccc';
       text.textContent = '关';
       text.style.color = '#444';
       toggle.classList.remove('is-online');
-
       glow.style.opacity = '0';
       glass.setAttribute('fill',   'url(#bulb-off)');
       glass.setAttribute('stroke', '#888888');
     }
   }
 
-  applyState(isOnline);
-
-  toggle.addEventListener('click', function () {
-    isOnline = !isOnline;
+  //保存本地，推送远程 
+  function syncState(online) {
+    isOnline = online;
     try {
-      localStorage.setItem(STORAGE_KEY, isOnline ? 'online' : 'offline');
+      localStorage.setItem(STORAGE_KEY, online ? 'online' : 'offline');
     } catch (e) { /* silent */ }
-    applyState(isOnline);
+    applyState(online);
+    pushRemoteState(online);
+  }
+
+  //初始化
+  fetchRemoteState().then(function (remote) {
+    if (remote !== null) {
+      syncState(remote);
+    } else {
+      try {
+        isOnline = localStorage.getItem(STORAGE_KEY) === 'online';
+      } catch (e) {
+        isOnline = false;
+      }
+      applyState(isOnline);
+    }
+  });
+
+  //点击切换
+  toggle.addEventListener('click', function () {
+    syncState(!isOnline);
   });
 
 })();

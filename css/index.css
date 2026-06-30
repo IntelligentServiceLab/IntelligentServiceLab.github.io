@@ -876,26 +876,19 @@ blockquote p {
 }
 .teacher-Info{
   margin-bottom: 7%;
-  display:table;
+  overflow: hidden; 
 }
-.teacher-image{
-  width: 200px;
-  display:table-cell;
-  vertical-align:middle;
-
-}
-.teacher-image img{
-  max-width: 94%;
-  max-height: 94%;
-  width: 1700px;
-  height:1700px;
-  height: auto !important;
+.teacher-image-float{
+  float: left;
+  width: clamp(120px, 16vw, 280px);
+  height: auto;
+  margin-right: 2rem;
+  margin-bottom: 1.2rem;
   border-color: #bdc1c4;
   border-radius: 5px;
+  display: block;
 }
 .introduct-teacher{
-  display:table-cell;
-  vertical-align:middle;
   font-size: 1.3vw;
 }
 #git_link:hover{
