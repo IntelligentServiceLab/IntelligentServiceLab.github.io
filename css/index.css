@@ -7,9 +7,7 @@ body {
   background-color: #f8f9f9;
   /*border-radius: 3px;*/
 }
-.page {
-  /*border-radius: 3px;*/
-}
+
 .author-bio {
   text-align: center;
 }
@@ -514,9 +512,7 @@ blockquote p {
   font-size: 3rem;
   padding: 0 1.2rem;
 }
-.container{
 
-}
 .page article {
   padding-left: 1.2rem;
   padding-right: 1.2rem;
@@ -880,16 +876,27 @@ blockquote p {
 }
 .teacher-image-float{
   float: left;
-  width: clamp(120px, 16vw, 280px);
+  width: clamp(90px, 18vw, 280px);
+  max-width: 42%;
   height: auto;
-  margin-right: 2rem;
-  margin-bottom: 1.2rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
   border-color: #bdc1c4;
   border-radius: 5px;
   display: block;
 }
 .introduct-teacher{
   font-size: 1.3vw;
+}
+
+  /*缩小头像*/
+@media (max-width: 480px) {
+  .teacher-image-float {
+    width: clamp(70px, 28vw, 120px);
+    max-width: 38%;
+    margin-right: 0.8rem;
+    margin-bottom: 0.6rem;
+  }
 }
 #git_link:hover{
   color: #6182b8;

@@ -1,7 +1,6 @@
 (function () {
   /*Firebase Realtime Database*/
-  var FIREBASE_URL = 'https://light-state-17fb5-default-rtdb.firebaseio.com';
-  var STATE_PATH   = '/light/online.json';
+  var FULL_URL = 'https://light-state-17fb5-default-rtdb.firebaseio.com/light/online.json';
 
   /* 注入灯泡 HTML */
   var blog = document.getElementById('blog_name');
@@ -48,17 +47,50 @@
   var toggle = document.getElementById('light-toggle');
   if (!toggle) return;
 
-  var track = document.getElementById('light-track');
   var text  = document.getElementById('light-text');
-  var glow  = document.getElementById('light-glow');
   var glass = document.getElementById('light-bulb-glass');
 
   var STORAGE_KEY = 'light-switch-state';
   var isOnline = false;
 
+//灯泡开关在网页缩放时固定
+  var lightSection = document.querySelector('.light-section');
+
+  function getBrowserZoom() {
+    if (window.outerWidth && window.innerWidth) {
+      var ratio = window.outerWidth / window.innerWidth;
+      if (ratio > 0.2 && ratio < 10) {
+        return ratio;
+      }
+    }
+    return 1;
+  }
+
+  function compensateZoom() {
+    if (!lightSection) return;
+    var zoom = getBrowserZoom();
+    if (Math.abs(zoom - 1) > 0.02) {
+      lightSection.style.transform = 'scale(' + (1 / zoom).toFixed(4) + ')';
+      lightSection.style.transformOrigin = 'top right';
+    } else {
+      lightSection.style.transform = '';
+    }
+  }
+
+  compensateZoom();
+  var resizeTicking = false;
+  window.addEventListener('resize', function () {
+    if (resizeTicking) return;
+    resizeTicking = true;
+    requestAnimationFrame(function () {
+      compensateZoom();
+      resizeTicking = false;
+    });
+  });
+
   /* ---- 从 Firebase 读取远程状态 ---- */
   function fetchRemoteState() {
-    return fetch(FIREBASE_URL + STATE_PATH + '?t=' + Date.now())
+    return fetch(FULL_URL + '?t=' + Date.now())
       .then(function (r) {
         if (!r.ok) throw new Error('HTTP ' + r.status);
         return r.json();
@@ -69,32 +101,19 @@
 
   /* ---- 推送状态到 Firebase ---- */
   function pushRemoteState(online) {
-    return fetch(FIREBASE_URL + STATE_PATH, {
+    return fetch(FULL_URL, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(online)
     }).catch(function () { /* 静默失败，本地已生效 */ });
   }
 
-  //应用状态到 UI
+  //应用状态到 UI（样式由 CSS .is-online 级联控制，此处只切类 + SVG 属性）
   function applyState(online) {
-    if (online) {
-      track.style.background = 'linear-gradient(90deg, #c4a838, #d4b850)';
-      text.textContent = '开';
-      text.style.color = '#222';
-      toggle.classList.add('is-online');
-      glow.style.opacity = '0.85';
-      glass.setAttribute('fill',   'url(#bulb-on)');
-      glass.setAttribute('stroke', '#e8b830');
-    } else {
-      track.style.background = '#cccccc';
-      text.textContent = '关';
-      text.style.color = '#444';
-      toggle.classList.remove('is-online');
-      glow.style.opacity = '0';
-      glass.setAttribute('fill',   'url(#bulb-off)');
-      glass.setAttribute('stroke', '#888888');
-    }
+    text.textContent = online ? '开' : '关';
+    toggle.classList.toggle('is-online', online);
+    glass.setAttribute('fill',   online ? 'url(#bulb-on)'  : 'url(#bulb-off)');
+    glass.setAttribute('stroke', online ? '#e8b830'        : '#888888');
   }
 
   //保存本地，推送远程 
