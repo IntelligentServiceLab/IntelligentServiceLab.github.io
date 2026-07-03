@@ -70,10 +70,9 @@
     if (!lightSection) return;
     var zoom = getBrowserZoom();
     if (Math.abs(zoom - 1) > 0.02) {
-      lightSection.style.transform = 'scale(' + (1 / zoom).toFixed(4) + ')';
-      lightSection.style.transformOrigin = 'top right';
+      lightSection.style.zoom = (1 / zoom).toFixed(4);
     } else {
-      lightSection.style.transform = '';
+      lightSection.style.zoom = '';
     }
   }
 
