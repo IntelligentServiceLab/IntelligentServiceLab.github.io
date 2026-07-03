@@ -334,10 +334,9 @@
 </script>
 
 <script>
-    /* 团队成员卡片 — 浏览器缩放免疫（zoom 属性，非 transform） */
     (function () {
-        var grids = document.querySelectorAll('.team-grid');
-        if (!grids.length) return;
+        var page = document.querySelector('#page_index_main .page');
+        if (!page) return;
 
         function getBrowserZoom() {
             if (window.outerWidth && window.innerWidth) {
@@ -350,9 +349,7 @@
         function compensateZoom() {
             var zoom = getBrowserZoom();
             var value = Math.abs(zoom - 1) > 0.02 ? (1 / zoom).toFixed(4) : '';
-            for (var i = 0; i < grids.length; i++) {
-                grids[i].style.zoom = value;
-            }
+            page.style.zoom = value;
         }
 
         compensateZoom();

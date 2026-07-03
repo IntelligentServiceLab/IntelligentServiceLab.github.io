@@ -3,20 +3,20 @@
 }
 
 .team-section {
-  margin-bottom: 2vh;
+  margin-bottom: 2rem;
 }
 
 .team-section h2 {
-  font-size: clamp(1.2rem, 2vw, 2.4rem);
-  margin-bottom: 1vh;
+  font-size: 2rem;
+  margin-bottom: 1rem;
   padding-left: 1rem;
   color: #494e52;
 }
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  gap: 2rem 1.8rem;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: 1.5rem;
   justify-items: center;
 }
 
@@ -72,14 +72,14 @@
 
 @media (max-width: 48em) {
   .team-grid {
-    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-    gap: 2rem 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    gap: 1.2rem;
   }
 }
 
 @media (max-width: 30em) {
   .team-grid {
-    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-    gap: 1.5rem 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 1rem;
   }
 }
