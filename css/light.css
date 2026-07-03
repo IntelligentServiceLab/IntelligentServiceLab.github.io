@@ -11,10 +11,9 @@
   gap: 6px;
 }
 
-/* ---- 灯泡外容器：宽度 100% 继承自 section，高度用 aspect-ratio ---- */
 .light-bulb-wrap {
   position: relative;
-  width: 100%;
+  width: 90%;
   aspect-ratio: 260 / 400;
 }
 
@@ -40,7 +39,7 @@
   pointer-events: none;
   z-index: 0;
   filter: blur(3px);
-  box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0 18px 5px rgba(0, 0, 0, 0.07);
 }
 
 /* ---- SVG ---- */
@@ -50,7 +49,7 @@
   display: block;
   position: relative;
   z-index: 1;
-  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.10));
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.10));
 }
 
 /* ---- 开关 ---- */
