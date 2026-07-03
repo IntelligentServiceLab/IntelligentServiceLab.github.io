@@ -130,6 +130,34 @@
   transition: transform 0.12s ease;
 }
 
+@media (max-width: 30em) {
+  .light-section {
+    width: 44px;
+    gap: 4px;
+  }
+  .light-glow {
+    filter: blur(2px);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.07);
+  }
+  .light-bulb-svg {
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.10));
+  }
+  .light-toggle-wrap {
+    margin-top: -5px;
+    border-radius: 8px;
+  }
+  .light-track {
+    border-radius: 8px;
+  }
+  .light-state-text {
+    font-size: 5px;
+    letter-spacing: 0.3px;
+  }
+  .light-knob {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+  }
+}
+
 /* 深色模式适配 */
 @media (prefers-color-scheme: dark) {
   .light-track {
