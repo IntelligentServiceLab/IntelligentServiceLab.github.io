@@ -1,5 +1,5 @@
 (function () {
-  /*Firebase Realtime Database*/
+  /* Firebase Realtime Database */
   var FULL_URL = 'https://light-state-17fb5-default-rtdb.firebaseio.com/light/online.json';
 
   /* 注入灯泡 HTML */
@@ -53,40 +53,6 @@
   var STORAGE_KEY = 'light-switch-state';
   var isOnline = false;
 
-//灯泡开关在网页缩放时固定
-  var lightSection = document.querySelector('.light-section');
-
-  function getBrowserZoom() {
-    if (window.outerWidth && window.innerWidth) {
-      var ratio = window.outerWidth / window.innerWidth;
-      if (ratio > 0.2 && ratio < 10) {
-        return ratio;
-      }
-    }
-    return 1;
-  }
-
-  function compensateZoom() {
-    if (!lightSection) return;
-    var zoom = getBrowserZoom();
-    if (Math.abs(zoom - 1) > 0.02) {
-      lightSection.style.zoom = (1 / zoom).toFixed(4);
-    } else {
-      lightSection.style.zoom = '';
-    }
-  }
-
-  compensateZoom();
-  var resizeTicking = false;
-  window.addEventListener('resize', function () {
-    if (resizeTicking) return;
-    resizeTicking = true;
-    requestAnimationFrame(function () {
-      compensateZoom();
-      resizeTicking = false;
-    });
-  });
-
   /* ---- 从 Firebase 读取远程状态 ---- */
   function fetchRemoteState() {
     return fetch(FULL_URL + '?t=' + Date.now())
@@ -107,7 +73,7 @@
     }).catch(function () { /* 静默失败，本地已生效 */ });
   }
 
-  //应用状态到 UI（样式由 CSS .is-online 级联控制，此处只切类 + SVG 属性）
+  /* ---- 应用状态到 UI ---- */
   function applyState(online) {
     text.textContent = online ? '开' : '关';
     toggle.classList.toggle('is-online', online);
@@ -115,7 +81,7 @@
     glass.setAttribute('stroke', online ? '#e8b830'        : '#888888');
   }
 
-  //保存本地，推送远程 
+  /* ---- 保存本地，推送远程 ---- */
   function syncState(online) {
     isOnline = online;
     try {
@@ -125,7 +91,7 @@
     pushRemoteState(online);
   }
 
-  //初始化
+  /* ---- 初始化 ---- */
   fetchRemoteState().then(function (remote) {
     if (remote !== null) {
       syncState(remote);
@@ -139,7 +105,7 @@
     }
   });
 
-  //点击切换
+  /* ---- 点击切换 ---- */
   toggle.addEventListener('click', function () {
     syncState(!isOnline);
   });

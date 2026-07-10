@@ -1,16 +1,16 @@
-/*  灯泡+开关 容器*/
 .light-section {
   position: absolute;
   right: 0.3%;
   top: 0;
-  width: 72px;
+  width: 5.625vw;
   z-index: 15;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 0.469vw;        
 }
 
+/* ---- 灯泡 ---- */
 .light-bulb-wrap {
   position: relative;
   width: 90%;
@@ -38,8 +38,8 @@
   transition: opacity 0.5s ease;
   pointer-events: none;
   z-index: 0;
-  filter: blur(3px);
-  box-shadow: 0 0 18px 5px rgba(0, 0, 0, 0.07);
+  filter: blur(0.234vw);   
+  box-shadow: 0 0 1.406vw 0.391vw rgba(0, 0, 0, 0.07);
 }
 
 /* ---- SVG ---- */
@@ -49,7 +49,7 @@
   display: block;
   position: relative;
   z-index: 1;
-  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.10));
+  filter: drop-shadow(0 0.234vw 0.391vw rgba(0, 0, 0, 0.10));
 }
 
 /* ---- 开关 ---- */
@@ -60,20 +60,19 @@
   cursor: pointer;
   z-index: 2;
   flex-shrink: 0;
-  margin-top: -8px;
+  margin-top: -0.625vw;   
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 0.938vw;  
 }
 
 .light-track {
   width: 100%;
   height: 100%;
-  border-radius: 12px;
+  border-radius: 0.938vw;
   background: #cccccc;
   transition: background 0.35s ease;
 }
 
-/* 文字标签：开关内居中（flexbox 居中，不依赖 transform，避免与父级缩放补偿叠加偏移）*/
 .light-state-text {
   position: absolute;
   inset: 0;
@@ -81,17 +80,17 @@
   align-items: center;
   justify-content: center;
   font-family: "黑体", "SimHei", "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 8px;
+  font-size: 0.625vw;    
   line-height: 1;
   font-weight: 700;
   color: rgba(68, 68, 68, 0.65);
   pointer-events: none;
-  transition: color 0.35s ease, font-weight 0.35s ease;
+  transition: color 0.35s ease;
   z-index: 2;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.039vw; 
 }
 
-/* 开关圆钮 */
+/* ---- 开关圆钮 ---- */
 .light-knob {
   position: absolute;
   top: 50%;
@@ -101,17 +100,16 @@
   aspect-ratio: 1;
   background: #fff;
   border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0.156vw 0.391vw rgba(0, 0, 0, 0.16);
   transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
 
-/* 开关圆钮 — 在线位置 */
 .light-toggle-wrap.is-online .light-knob {
   left: calc(100% - 29% - 4%);
 }
 
-/* ---- 在线状态：轨道 / 文字 / 光晕 ---- */
+/* ---- 在线状态 ---- */
 .light-toggle-wrap.is-online .light-track {
   background: linear-gradient(90deg, #c4a838, #d4b850);
 }
@@ -124,41 +122,13 @@
   opacity: 0.85;
 }
 
-/* 开关点击缩放反馈 */
+/* ---- 点击反馈 ---- */
 .light-toggle-wrap:active {
   transform: scale(0.94);
   transition: transform 0.12s ease;
 }
 
-@media (max-width: 30em) {
-  .light-section {
-    width: 44px;
-    gap: 4px;
-  }
-  .light-glow {
-    filter: blur(2px);
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.07);
-  }
-  .light-bulb-svg {
-    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.10));
-  }
-  .light-toggle-wrap {
-    margin-top: -5px;
-    border-radius: 8px;
-  }
-  .light-track {
-    border-radius: 8px;
-  }
-  .light-state-text {
-    font-size: 5px;
-    letter-spacing: 0.3px;
-  }
-  .light-knob {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
-  }
-}
-
-/* 深色模式适配 */
+/* ---- 深色模式 ---- */
 @media (prefers-color-scheme: dark) {
   .light-track {
     background: #555;
@@ -173,4 +143,3 @@
     color: rgba(17, 17, 17, 0.7);
   }
 }
-
