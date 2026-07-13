@@ -87,7 +87,21 @@ $(function () {
         }
     });
 
-    // smooth scroll
+    //自动高亮当前板块按钮
+    function highlightNav() {
+        var p = location.pathname, s;
+        if (p.indexOf('team') >= 0)        s = 'team';
+        else if (p.indexOf('publication') >= 0) s = 'publication';
+        else if (p.indexOf('project') >= 0) s = 'project';
+        else if (p.indexOf('award') >= 0)  s = 'award';
+        else if (p.indexOf('contact') >= 0) s = 'contact';
+        else                                s = 'news';
+        $('.social-btns .btn').removeClass('active').filter('[href*="' + s + '"]').addClass('active');
+    }
+    $(document).on('pjax:end', highlightNav);
+    $(window).on('popstate', function () { setTimeout(highlightNav, 60); });
+    highlightNav();
+
     $(function () {
         $('a[href*=\\#]:not([href=\\#])').click(function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

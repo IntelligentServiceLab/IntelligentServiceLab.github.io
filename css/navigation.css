@@ -6,9 +6,6 @@ a,
 img {
     border: 0;
 }
-body {
-
-}
 
 .social-btns .btn.facebook .fa {
     color: #3b5998;
@@ -29,6 +26,7 @@ body {
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
 }
+.social-btns .btn.active .fa,
 .social-btns .btn:focus .fa,
 .social-btns .btn:hover .fa {
     color: #fff;
@@ -72,6 +70,7 @@ body {
     top: 90%;
     left: -110%;
 }
+.social-btns .btn.active:before,
 .social-btns .btn:focus:before,
 .social-btns .btn:hover:before {
     top: -10%;
