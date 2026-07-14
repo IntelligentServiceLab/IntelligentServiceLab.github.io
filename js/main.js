@@ -95,7 +95,7 @@ $(function () {
         else if (p.indexOf('project') >= 0) s = 'project';
         else if (p.indexOf('award') >= 0)  s = 'award';
         else if (p.indexOf('contact') >= 0) s = 'contact';
-        else                                s = 'news';
+        else return;
         $('.social-btns .btn').removeClass('active').filter('[href*="' + s + '"]').addClass('active');
     }
     $(document).on('pjax:end', highlightNav);
