@@ -63,29 +63,23 @@ $(function () {
         });
     });
 
-    // pjax
+    /*
+    // pjax（需 jquery.pjax.js 插件）
     $(document).pjax('a[target!=_blank]','.page', {
         fragment: '.page',
         timeout: 5000
     });
     $(document).on({
         'pjax:click': function() {
-            $('body,html').animate({
-                scrollTop: 0,
-            }, 700);
+            $('body,html').animate({ scrollTop: 0 }, 700);
         },
         'pjax:end': function() {
-            if ($(".header_wrap").hasClass("menus-open")) {
-                $(".header_wrap").removeClass("menus-open").addClass("menus-close")
-            }
-            if ($(".author-links").hasClass("is-open")) {
-                $(".author-links").removeClass("is-open").addClass("is-close")
-            }
-            if ($(".nav").hasClass("nav-open")) {
-                $(".nav").removeClass("nav-open").addClass("nav-close")
-            }
+            if ($(".header_wrap").hasClass("menus-open")) $(".header_wrap").removeClass("menus-open").addClass("menus-close");
+            if ($(".author-links").hasClass("is-open")) $(".author-links").removeClass("is-open").addClass("is-close");
+            if ($(".nav").hasClass("nav-open")) $(".nav").removeClass("nav-open").addClass("nav-close");
         }
     });
+    */
 
     //自动高亮当前板块按钮
     function highlightNav() {
@@ -98,7 +92,7 @@ $(function () {
         else return;
         $('.social-btns .btn').removeClass('active').filter('[href*="' + s + '"]').addClass('active');
     }
-    $(document).on('pjax:end', highlightNav);
+    // $(document).on('pjax:end', highlightNav);
     $(window).on('popstate', function () { setTimeout(highlightNav, 60); });
     highlightNav();
 

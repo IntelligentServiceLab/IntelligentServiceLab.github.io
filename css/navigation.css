@@ -45,6 +45,12 @@ img {
 
 }
 
+#nav {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
 .social-btns {
     height: 40vw;
     min-height:250px;
