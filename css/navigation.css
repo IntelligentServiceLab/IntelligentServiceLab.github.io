@@ -112,3 +112,31 @@ img {
     transition: all 0.35s;
     transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);/*速度呈曲线变化*/
 }
+
+/* ---- 移动端：侧栏变顶部横条 ---- */
+@media (max-width: 48em) {
+    #nav {
+        width: 100% !important;
+        position: relative;
+    }
+    .social-btns {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1vw;
+    }
+    .social-btns .btn {
+        width: auto;
+        height: auto;
+        margin: 1vw;
+        padding: 2.5vw 4vw;
+        display: inline-block;
+    }
+    .social-btns .btn .fa {
+        font-size: 4vw;
+        max-height: none;
+        right: 0;
+        bottom: 0;
+    }
+}

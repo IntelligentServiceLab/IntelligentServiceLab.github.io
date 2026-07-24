@@ -1,0 +1,352 @@
+@media (max-width: 48em) {
+  html,
+  body {
+    width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 1.6rem;
+    line-height: 1.75;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  #blog_name {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #blog_name .background {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+
+  #blog_name #site-name {
+    top: 50%;
+    left: clamp(6.1rem, 16vw, 7.8rem);
+    margin: 0;
+    font-size: clamp(1.9rem, 5.3vw, 2.7rem);
+    line-height: 1;
+    white-space: nowrap;
+    transform: translateY(-50%);
+  }
+
+  #blog_name > a:not(#site-name) {
+    top: 50%;
+    left: 1rem;
+    display: block;
+    width: clamp(4.4rem, 12vw, 5.8rem);
+    height: clamp(4.4rem, 12vw, 5.8rem);
+    margin: 0;
+    transform: translateY(-50%);
+  }
+
+  #blog_name .first-logo {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .light-section {
+    display: flex;
+    right: 0.3rem;
+    width: clamp(2.5rem, 7vw, 3.5rem);
+  }
+
+  .light-state-text {
+    font-size: clamp(0.6rem, 1.6vw, 0.8rem);
+  }
+
+  .main-box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #nav {
+    position: relative;
+    top: auto;
+    width: 100% !important;
+    height: auto;
+    margin: 1.2rem 0 0;
+    padding: 0 1.2rem;
+  }
+
+  #nav .social-btns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.8rem;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  #nav .social-btns .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+    min-height: 4.8rem;
+    height: auto;
+    margin: 0;
+    padding: 0.7rem 0.4rem;
+    border-radius: 0.9rem;
+  }
+
+  #nav .social-btns .btn .fa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    max-height: none;
+    font-size: clamp(1.45rem, 4vw, 1.8rem);
+    line-height: 1.25;
+    white-space: nowrap;
+    transform: none;
+  }
+
+  #nav .social-btns .btn .fa::before {
+    display: none;
+  }
+
+  #nav .social-btns .btn.active .fa,
+  #nav .social-btns .btn:focus .fa,
+  #nav .social-btns .btn:hover .fa {
+    transform: none;
+  }
+
+  #page_index_main {
+    width: calc(100% - 2.4rem) !important;
+    height: auto !important;
+    min-height: 0;
+    margin: 2rem 1.2rem 3.2rem !important;
+  }
+
+  #page_index_main .page {
+    width: 100%;
+    height: auto !important;
+    min-height: 0;
+    margin: 0;
+    float: none;
+  }
+
+  #markdown-content {
+    height: auto;
+    padding: 0 0.4rem 2.4rem !important;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+  }
+
+  #markdown-content h1 {
+    font-size: 2.8rem;
+    line-height: 1.3;
+  }
+
+  #markdown-content h2 {
+    font-size: 2.3rem;
+    line-height: 1.4;
+  }
+
+  #markdown-content h3 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  #markdown-content p,
+  #markdown-content li {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+
+  #markdown-content ul,
+  #markdown-content ol {
+    padding-left: 2.2rem;
+  }
+
+  #markdown-content a,
+  .link {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  #page_index_main > .page > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 2.8rem !important;
+  }
+
+  #page_index_main > .page > h2 {
+    margin: 0 0 1.6rem;
+    padding: 0 0.4rem;
+    font-size: 2.4rem !important;
+    line-height: 1.4;
+  }
+
+  .teacher-Info {
+    margin-bottom: 0;
+  }
+
+  .introduct-teacher {
+    padding: 0 0.4rem !important;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+  }
+
+  .teacher-image-float {
+    float: none;
+    width: clamp(14rem, 44vw, 18rem);
+    max-width: 55%;
+    height: auto;
+    margin: 0 auto 1.8rem;
+  }
+
+  .team-section {
+    margin-bottom: 3.2rem;
+  }
+
+  .team-section h2 {
+    margin: 0 0 1.6rem;
+    padding: 0;
+    font-size: clamp(2.4rem, 7vw, 3rem);
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem 1rem;
+    width: 100%;
+  }
+
+  .li-t {
+    border-radius: 0.7rem;
+  }
+
+  .li-t:hover {
+    transform: none;
+  }
+
+  .li-Intro {
+    min-height: 5.8rem;
+    padding: 0.7rem 0.4rem;
+    font-size: 1.45rem;
+  }
+
+  body .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  body .div-gallery-item-container {
+    min-height: 0;
+    margin: 0;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.12);
+  }
+
+  .link {
+    display: inline;
+    margin: 0;
+    font-size: 1.6rem !important;
+    line-height: 1.8;
+  }
+
+  #git_link {
+    word-break: break-all;
+  }
+
+  .map {
+    left: 0 !important;
+    top: 0 !important;
+    margin-top: 2rem;
+  }
+
+  #map_container {
+    width: 100% !important;
+    height: clamp(32rem, 50vh, 46rem) !important;
+  }
+
+  body .friend-links-wrap {
+    gap: 1.8rem;
+    margin: 1.2rem 0 3rem;
+  }
+
+  body .friend-links-col,
+  body .friend-links-col:first-child {
+    gap: 0.6rem;
+    padding-left: 0;
+  }
+
+  body .friend-links-col a {
+    padding: 0.35rem 0;
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  #page_footer {
+    float: none;
+    width: 100%;
+    background: #303943;
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+
+  #page_footer img {
+    display: block;
+    width: 100%;
+    height: 7.2rem;
+    object-fit: cover;
+    bottom: auto;
+  }
+
+  #page_footer > div {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 1.2rem 1.6rem 1.5rem;
+    font-size: 1.3rem !important;
+    overflow-wrap: anywhere;
+  }
+
+  .nav-wrap {
+    right: 0.8rem;
+    bottom: 2rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      scroll-behavior: auto !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@media (max-width: 21em) {
+  #nav .social-btns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

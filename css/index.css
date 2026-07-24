@@ -1150,3 +1150,23 @@ blockquote p {
   right: -30%;
 }
 
+
+/* ---- 移动端：字体下限 ---- */
+@media (max-width: 48em) {
+    #blog_name a {
+        font-size: 6vw;
+    }
+    .first-logo {
+        width: 12vw;
+        height: 12vw;
+    }
+    .link {
+        font-size: 3.5vw;
+    }
+    #page_footer div {
+        font-size: 3vw !important;
+    }
+    #markdown-content {
+        font-size: 3.5vw;
+    }
+}

@@ -155,3 +155,15 @@ padding: 10px; */
 #page4{
     display: inline;
 }
+
+/* ---- 移动端：内容区占满宽 ---- */
+@media (max-width: 48em) {
+    .main-box {
+        flex-direction: column;
+    }
+    #page_index_main {
+        width: 100% !important;
+        margin: 3vw;
+        height: auto;
+    }
+}
