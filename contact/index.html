@@ -108,7 +108,7 @@
 
 <footer id="page_footer">
     <img src="../img/底部.webp">
-    <div style="position:absolute;width:100%;height:auto;z-index:2;left:0%;top:30%;font-size: 1vw;text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;font-weight: bold">
+    <div style="position:absolute;width:100%;height:auto;z-indent:2;left:0%;top:30%;font-size: 1vw;text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;font-weight: bold">
         联系我们: guoshengkang@gmail.com</br>
         地址: 湖南省湘潭市雨湖区湖南科技大学计算机科学与工程学院</br>
         Copyright © 智能服务实验室
@@ -184,7 +184,7 @@
     jsapi.onload = function () {
         var map = new AMap.Map('map_container', {
             zoom: 15,//级别
-            center: [112.91817, 27.90435],//中心点坐标
+            center: [112.921618, 27.90184],//中心点坐标
         });
         // 比例尺
         AMap.plugin([
@@ -237,7 +237,7 @@
             map.clearMap();
             var marker = new AMap.Marker({
                 map: map,
-                position: [112.91817, 27.90435],
+                position: [112.921618, 27.90184],
                 title: "SCDM实验室",
             });
             //鼠标点击marker弹出自定义的信息窗体
@@ -254,7 +254,7 @@
     }
     document.head.appendChild(jsapi);
 
-    /* 已改用 CSS sticky，以下 JS 保留供复查
+    /* 已改用 CSS sticky
 var divElement = document.getElementById("nav");
 
     function getDistanceToBottom() {
